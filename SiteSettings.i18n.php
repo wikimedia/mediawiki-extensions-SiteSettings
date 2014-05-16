@@ -1,62 +1,20 @@
 <?php
-/**
- * @author Yaron Koren
- */
-
 $messages = array();
+$GLOBALS['wgHooks']['LocalisationCacheRecache'][] = function ( $cache, $code, &$cachedData ) {
+	$codeSequence = array_merge( array( $code ), $cachedData['fallbackSequence'] );
+	foreach ( $codeSequence as $csCode ) {
+		$fileName = __DIR__ . "/i18n/$csCode.json";
+		if ( is_readable( $fileName ) ) {
+			$data = FormatJson::decode( file_get_contents( $fileName ), true );
+			foreach ( array_keys( $data ) as $key ) {
+				if ( $key === '' || $key[0] === '@' ) {
+					unset( $data[$key] );
+				}
+			}
+			$cachedData['messages'] = array_merge( $data, $cachedData['messages'] );
+		}
 
-$messages['en'] = array(
-	'sitesettings-desc' => "Allows for modifying settings through a wiki interface",
-	'sitesettings' => 'Site settings',
-	'sitesettings-sitename' => 'Site name:',
-	'sitesettings-sitenamespace' => 'Site-specific namespace name:',
-	'sitesettings-timezone' => 'Hours offset from GMT:',
-	'sitesettings-current-gmt' => '(current GMT time is $1 or $2)',
-	'sitesettings-americandates' => 'Use American-style dates',
-	'sitesettings-showpageviews' => 'Show count of page views at the bottom of each page',
-	'sitesettings-usesubpages' => 'Use <a href="http://www.mediawiki.org/wiki/Help:Subpages">subpages</a>',
-	'sitesettings-allowexternalimages' => 'Allow external images',
-	'sitesettings-allowlowercasepagenames' => 'Allow lowercase page names',
-	'sitesettings-copyrighturl' => 'Copyright URL:',
-	'sitesettings-copyrightdesc' => 'Copyright description:',
-	'sitesettings-viewingpolicy' => 'Viewing',
-	'sitesettings-public' => 'Public',
-	'sitesettings-publicdesc' => 'Everyone can read the site',
-	'sitesettings-private' => 'Private',
-	'sitesettings-privatedesc' => 'Only registered users can read the site',
-	'sitesettings-veryprivate' => 'Very private',
-	'sitesettings-veryprivatedesc' => 'Users can only view the main page and their own user page',
-	'sitesettings-registrationpolicy' => 'Registration',
-	'sitesettings-openreg' => 'Open',
-	'sitesettings-openregdesc' => 'Everyone can register',
-	'sitesettings-openidreg' => 'OpenID only',
-	'sitesettings-closedreg' => 'Closed',
-	'sitesettings-closedregdesc' => 'Users can only be added by an administrator',
-	'sitesettings-editingpolicy' => 'Editing',
-	'sitesettings-openediting' => 'Open',
-	'sitesettings-openeditingdesc' => 'Everyone can edit',
-	'sitesettings-closedediting' => 'Closed',
-	'sitesettings-closededitingdesc' => 'Only registered users can edit',
-	'sitesettings-veryclosedediting' => 'Very closed',
-	'sitesettings-veryclosededitingdesc' => 'Only administrators can edit',
-	'sitesettings-updated' => 'Site settings were updated.',
-	'sitesettings-appearanceupdated' => 'Site appearance settings were updated.',
-	'sitesettings-userskinsreset' => 'The skin for all existing users of this wiki has been changed to "$1".',
-	'sitesettings-sitelogo' => 'Logo',
-	'sitesettings-nologo' => 'There is no current logo.',
-	'sitesettings-uploadlogo' => 'Upload logo:',
-	'sitesettings-currentlogo' => 'Current logo:',
-	'sitesettings-removelogo' => 'Remove logo',
-	'sitesettings-changelogo' => 'Change logo:',
-	'sitesettings-logouploaded' => 'Logo was uploaded.',
-	'sitesettings-logoremoved' => 'Logo was removed.',
-	'sitesettings-faviconheader' => 'Favicon file',
-	'sitesettings-sitefavicon' => 'Favicon',
-	'sitesettings-nofavicon' => 'There is no current favicon.',
-	'sitesettings-uploadfavicon' => 'Upload favicon (it should be called "favicon.ico"):',
-	'sitesettings-currentfavicon' => 'Current favicon:',
-	'sitesettings-removefavicon' => 'Remove favicon',
-	'sitesettings-changefavicon' => 'Change favicon:',
-	'sitesettings-faviconuploaded' => 'Favicon was uploaded.',
-	'sitesettings-faviconremoved' => 'Favicon was removed.',
-);
+		$cachedData['deps'][] = new FileDependency( $fileName );
+	}
+	return true;
+};

@@ -31,6 +31,7 @@ $wgExtensionCredits['other'][]= array(
 	'descriptionmsg' => 'sitesettings-desc',
 );
 
+$wgMessagesDirs['SiteSettings'] = $dir . '/i18n';
 $wgExtensionMessagesFiles['SiteSettings'] = $dir . '/SiteSettings.i18n.php';
 
 $wgExtensionFunctions[] = 'SSUtils::initializeSite';

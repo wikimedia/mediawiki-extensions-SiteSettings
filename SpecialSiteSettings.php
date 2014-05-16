@@ -133,11 +133,12 @@ END;
 END;
 
 		wfRunHooks( 'SiteSettingsMainTab', array( $siteSettings, &$text ) );
+		$update_label = wfMessage( 'sitesettings-update' )->text();
 		$text .=<<<END
-	<p><input type="Submit" name="update" value="Update" id="prefsubmit"></p>
+	<p><input type="Submit" name="update" value="$update_label" id="prefsubmit"></p>
 
 END;
-		return $this->printTab('Main', $text);
+		return $this->printTab( wfMessage( 'sitesettings-maintab' )->text(), $text );
 	}
 
 	function printPrivacyTab($siteSettings) {
@@ -169,11 +170,12 @@ END;
 
 		wfRunHooks( 'SiteSettingsPrivacyTab', array( $siteSettings, &$text ) );
 
+		$update_label = wfMessage( 'sitesettings-update' )->text();
 		$text .=<<<END
-	<p><input type="Submit" name="update-privacy" value="Update" id="prefsubmit"></p>
+	<p><input type="Submit" name="update-privacy" value="$update_label" id="prefsubmit"></p>
 
 END;
-		return $this->printTab('Privacy', $text);
+		return $this->printTab( wfMessage( 'sitesettings-privacytab' )->text(), $text );
 	}
 
 	function printSkinTab($siteSettings) {
@@ -216,8 +218,9 @@ END;
 		$text .= "</p>\n";
 		wfRunHooks( 'SiteSettingsSkinTab', array( $siteSettings, &$text ) );
 
+		$update_label = wfMessage( 'sitesettings-update' )->text();
 		$text .=<<<END
-	<p><input type="Submit" name="update-appearance" value="Update" id="prefsubmit"></p>
+	<p><input type="Submit" name="update-appearance" value="$update_label" id="prefsubmit"></p>
 END;
 
 		$text .=<<<END
