@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"sitesettings": "Astellunge vum Site",
+	"sitesettings-maintab": "Haapt",
+	"sitesettings-sitename": "Numm vum Site:",
+	"sitesettings-americandates": "Benotzt dat amerikanescht Datumsformat",
+	"sitesettings-allowexternalimages": "Extern Biller erlaben",
+	"sitesettings-copyrightdesc": "Copyright-Beschreiwung:",
+	"sitesettings-update": "Aktualiséieren",
+	"sitesettings-public": "Ëffentlech",
+	"sitesettings-publicdesc": "Jiddweree kann de Site liesen",
+	"sitesettings-private": "Privat",
+	"sitesettings-privatedesc": "Nëmme registréiert Benotzer kënnen de Site liesen",
+	"sitesettings-veryprivate": "Ganz privat",
+	"sitesettings-registrationpolicy": "Umeldung",
+	"sitesettings-openreg": "Op",
+	"sitesettings-openregdesc": "Jiddweree ka sech aschreiwen",
+	"sitesettings-closedreg": "Zou",
+	"sitesettings-closedediting": "Zou",
+	"sitesettings-veryclosededitingdesc": "Nëmmen Administrateure kënnen änneren",
+	"sitesettings-sitelogo": "Logo",
+	"sitesettings-uploadlogo": "Logo eroplueden:",
+	"sitesettings-currentlogo": "Aktuelle Logo:",
+	"sitesettings-removelogo": "Logo ewechhuelen",
+	"sitesettings-changelogo": "Logo änneren:",
+	"sitesettings-logouploaded": "De Logo gouf eropgelueden.",
+	"sitesettings-logoremoved": "De Logo gouf ewechgeholl."
+}
