@@ -50,10 +50,9 @@ class SpecialSiteSettings extends SpecialPage {
 		return $text;
 	}
 
-	public static function printTab( $tab_name, $tab_body ) {
-		$tabNameForID = strtolower( str_replace( ' ', '-', $tab_name ) );
+	public static function printTab( $tab_name, $tab_body, $tab_id ) {
 		$text =<<<END
-	<fieldset id="mw-prefsection-$tabNameForID">
+	<fieldset id="mw-prefsection-$tab_id">
 	<legend>$tab_name</legend>
 $tab_body
 	</fieldset>
@@ -138,7 +137,7 @@ END;
 	<p><input type="Submit" name="update" value="$update_label" id="prefsubmit"></p>
 
 END;
-		return $this->printTab( wfMessage( 'sitesettings-maintab' )->text(), $text );
+		return $this->printTab( wfMessage( 'sitesettings-maintab' )->text(), $text , "main");
 	}
 
 	function printPrivacyTab($siteSettings) {
@@ -175,7 +174,7 @@ END;
 	<p><input type="Submit" name="update-privacy" value="$update_label" id="prefsubmit"></p>
 
 END;
-		return $this->printTab( wfMessage( 'sitesettings-privacytab' )->text(), $text );
+		return $this->printTab( wfMessage( 'sitesettings-privacytab' )->text(), $text, "privacy" );
 	}
 
 	function printSkinTab($siteSettings) {
@@ -229,7 +228,7 @@ END;
 	<p><input type="Submit" name="reset-user-skins" value="Reset all skins" id="prefsubmit"></p>
 
 END;
-		return $this->printTab( $default_skin_label, $text );
+		return $this->printTab( $default_skin_label, $text, "skin" );
 
 	}
 
@@ -297,7 +296,7 @@ END;
 
 END;
 		$text .= self::printFaviconSection( $siteSettings, $favicon_error_msg );
-		return $this->printTab( wfMessage( 'sitesettings-sitelogo' )->text(), $text );
+		return $this->printTab( wfMessage( 'sitesettings-sitelogo' )->text(), $text, "logo" );
 	}
 
 	function doSpecialSiteSettings() {
