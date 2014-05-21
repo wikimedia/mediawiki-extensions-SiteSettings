@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fitoschido"
+		]
+	},
+	"sitesettings": "Configuración del sitio",
+	"sitesettings-maintab": "Principal",
+	"sitesettings-sitename": "Nombre del sitio:",
+	"sitesettings-americandates": "Fechas al estilo E.E. U.U.",
+	"sitesettings-update": "Actualizar",
+	"sitesettings-privacytab": "Privacidad",
+	"sitesettings-viewingpolicy": "Visualización",
+	"sitesettings-public": "Público",
+	"sitesettings-publicdesc": "Cualquiera puede leer el sitio",
+	"sitesettings-private": "Privado",
+	"sitesettings-privatedesc": "Solo los usuarios registrados pueden leer el sitio",
+	"sitesettings-veryprivate": "Muy privado",
+	"sitesettings-veryprivatedesc": "Los usuarios solo pueden ver la página principal y su página de usuario",
+	"sitesettings-registrationpolicy": "Registro",
+	"sitesettings-openreg": "Abierto",
+	"sitesettings-openregdesc": "Cualquiera puede registrarse",
+	"sitesettings-closedreg": "Cerrado",
+	"sitesettings-closedregdesc": "Solo los administradores pueden añadir usuarios",
+	"sitesettings-editingpolicy": "Edición",
+	"sitesettings-openediting": "Abierta",
+	"sitesettings-openeditingdesc": "Cualquiera puede editar",
+	"sitesettings-closedediting": "Cerrada",
+	"sitesettings-closededitingdesc": "Solo los usuarios registrados pueden editar",
+	"sitesettings-veryclosedediting": "Muy cerrada",
+	"sitesettings-veryclosededitingdesc": "Solo los administradores pueden editar",
+	"sitesettings-updated": "Se actualizó la configuración del sitio.",
+	"sitesettings-appearanceupdated": "Se actualizó la configuración de apariencia del sitio.",
+	"sitesettings-sitelogo": "Logo",
+	"sitesettings-currentlogo": "Logo actual:",
+	"sitesettings-logouploaded": "Se actualizó el logo."
+}

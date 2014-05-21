@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aftab1995"
+		]
+	},
+	"sitesettings-maintab": "প্রধান",
+	"sitesettings-sitename": "সাইটের নাম:",
+	"sitesettings-timezone": "জিএমটি থেকে অফসেট ঘন্টা:",
+	"sitesettings-current-gmt": "(বর্তমান জিএমটি সময় হচ্ছে $1 অথবা $2)",
+	"sitesettings-update": "হালনাগাদ",
+	"sitesettings-closedreg": "বন্ধ",
+	"sitesettings-openeditingdesc": "সবাই সম্পাদনা করতে পারে",
+	"sitesettings-veryclosededitingdesc": "শুধুমাত্র প্রশাসকগণ সম্পাদনা করতে পারবে",
+	"sitesettings-sitelogo": "লোগো",
+	"sitesettings-currentlogo": "বর্তমান লোগো:",
+	"sitesettings-removelogo": "লোগো সরাও"
+}
