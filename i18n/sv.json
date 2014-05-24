@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Josve05a"
+		]
+	},
+	"sitesettings-current-gmt": "(nuvarande GMT-tid är $1 eller $2)",
+	"sitesettings-copyrighturl": "Copyright-URL:",
+	"sitesettings-update": "Uppdatera",
+	"sitesettings-registrationpolicy": "Registrering",
+	"sitesettings-veryclosededitingdesc": "Endast administratörer kan redigera",
+	"sitesettings-removelogo": "Ta bort logotypen",
+	"sitesettings-logouploaded": "Logotypen har laddats upp."
+}

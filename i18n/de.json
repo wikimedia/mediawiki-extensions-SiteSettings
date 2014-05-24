@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Metalhead64"
+			"Metalhead64",
+			"ChrisiPK"
 		]
 	},
 	"sitesettings-desc": "Ermöglicht die Änderung von Einstellungen durch eine Wiki-Oberfläche",
 	"sitesettings": "Website-Einstellungen",
-	"sitesettings-maintab": "Haupt",
+	"sitesettings-maintab": "Allgemein",
 	"sitesettings-sitename": "Name der Website:",
 	"sitesettings-sitenamespace": "Websitespezifischer Name des Namensraums:",
 	"sitesettings-timezone": "Stunden ab GMT:",
