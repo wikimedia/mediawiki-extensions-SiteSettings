@@ -16,5 +16,6 @@
 	"sitesettings-allowlowercasepagenames": "Used as label for the checkbox in [[Special:SiteSettings]].",
 	"sitesettings-update": "Used as label for the Submit button.\n{{Identical|Update}}",
 	"sitesettings-public": "{{Identical|Public}}",
+	"sitesettings-editingpolicy": "{{Identical|Editing}}",
 	"sitesettings-sitelogo": "{{Identical|Logo}}"
 }
