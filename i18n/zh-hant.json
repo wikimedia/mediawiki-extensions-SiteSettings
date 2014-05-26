@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Liuxinyu970226"
+		]
+	},
+	"sitesettings-desc": "允許經由wiki接口設定",
+	"sitesettings": "網站設定",
+	"sitesettings-maintab": "主",
+	"sitesettings-sitename": "網站名稱：",
+	"sitesettings-update": "更新",
+	"sitesettings-privacytab": "隱私",
+	"sitesettings-viewingpolicy": "查閱",
+	"sitesettings-public": "公開",
+	"sitesettings-private": "私有"
+}

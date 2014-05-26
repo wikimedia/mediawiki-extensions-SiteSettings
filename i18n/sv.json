@@ -1,14 +1,23 @@
 {
 	"@metadata": {
 		"authors": [
-			"Josve05a"
+			"Josve05a",
+			"Jopparn"
 		]
 	},
+	"sitesettings": "Sidinställningar",
 	"sitesettings-current-gmt": "(nuvarande GMT-tid är $1 eller $2)",
 	"sitesettings-copyrighturl": "Copyright-URL:",
 	"sitesettings-update": "Uppdatera",
 	"sitesettings-registrationpolicy": "Registrering",
+	"sitesettings-editingpolicy": "Redigering",
+	"sitesettings-openediting": "Öppna",
 	"sitesettings-veryclosededitingdesc": "Endast administratörer kan redigera",
+	"sitesettings-sitelogo": "Logotyp",
 	"sitesettings-removelogo": "Ta bort logotypen",
-	"sitesettings-logouploaded": "Logotypen har laddats upp."
+	"sitesettings-changelogo": "Ändra logotyp:",
+	"sitesettings-logouploaded": "Logotypen har laddats upp.",
+	"sitesettings-faviconheader": "Favicon-fil",
+	"sitesettings-nofavicon": "Det finns ingen aktuell favicon.",
+	"sitesettings-faviconuploaded": "Favicon laddades upp."
 }

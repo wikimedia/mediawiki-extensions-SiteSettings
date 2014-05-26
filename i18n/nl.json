@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"SPQRobin"
+			"SPQRobin",
+			"Mar(c)"
 		]
 	},
 	"sitesettings-usesubpages": "<a href=\"https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Subpages\">Subpagina's</a> gebruiken",
 	"sitesettings-publicdesc": "Iedereen kan de site lezen",
 	"sitesettings-privatedesc": "Alleen geregistreerde gebruikers kunnen de site lezen",
-	"sitesettings-closedregdesc": "Gebruikers kunnen alleen worden toegevoegd door een beheerder",
+	"sitesettings-closedregdesc": "Gebruikers kunnen alleen door een beheerder worden toegevoegd",
 	"sitesettings-openeditingdesc": "Iedereen kan bewerken",
 	"sitesettings-closededitingdesc": "Alleen geregistreerde gebruikers kunnen bewerken",
 	"sitesettings-veryclosededitingdesc": "Alleen beheerders kunnen bewerken"
