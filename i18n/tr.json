@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mavrikant"
+		]
+	},
+	"sitesettings-maintab": "Ana",
+	"sitesettings-update": "Güncelle",
+	"sitesettings-viewingpolicy": "Görüntüleme",
+	"sitesettings-closedreg": "Kapalı",
+	"sitesettings-veryclosededitingdesc": "Sadece yöneticiler düzenleyebilir",
+	"sitesettings-removelogo": "Logoyu kaldır",
+	"sitesettings-logouploaded": "Logo yüklendi."
+}

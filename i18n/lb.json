@@ -12,6 +12,7 @@
 	"sitesettings-allowexternalimages": "Extern Biller erlaben",
 	"sitesettings-allowlowercasepagenames": "Säitennimm mat klenge Buschtawen erlaben",
 	"sitesettings-copyrightdesc": "Copyright-Beschreiwung:",
+	"sitesettings-copyrighturl": "Copyright-URL:",
 	"sitesettings-update": "Aktualiséieren",
 	"sitesettings-privacytab": "Dateschutz",
 	"sitesettings-viewingpolicy": "Kucken",
@@ -41,5 +42,13 @@
 	"sitesettings-removelogo": "Logo ewechhuelen",
 	"sitesettings-changelogo": "Logo änneren:",
 	"sitesettings-logouploaded": "De Logo gouf eropgelueden.",
-	"sitesettings-logoremoved": "De Logo gouf ewechgeholl."
+	"sitesettings-logoremoved": "De Logo gouf ewechgeholl.",
+	"sitesettings-faviconheader": "Favicon-Fichier",
+	"sitesettings-nofavicon": "Et gëtt elo kee Favicon.",
+	"sitesettings-uploadfavicon": "Favicon eroplueden (soll „<code>favicon.ico</code>“ heeschen):",
+	"sitesettings-currentfavicon": "Aktuelle Favicon:",
+	"sitesettings-removefavicon": "Favicon ewechhuelen",
+	"sitesettings-changefavicon": "Favicon änneren:",
+	"sitesettings-faviconuploaded": "Favicon gouf eropgelueden.",
+	"sitesettings-faviconremoved": "Favicon gouf ewechgeholl."
 }
