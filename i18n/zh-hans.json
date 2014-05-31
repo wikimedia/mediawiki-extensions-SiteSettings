@@ -1,14 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"Mywood"
 		]
 	},
 	"sitesettings-desc": "允许通过wiki界面修改设置",
-	"sitesettings": "站点设置",
+	"sitesettings": "网站设置",
 	"sitesettings-maintab": "主",
-	"sitesettings-sitename": "站点名：",
-	"sitesettings-sitenamespace": "站点特定名字空间名：",
+	"sitesettings-sitename": "网站名称：",
+	"sitesettings-sitenamespace": "网站特定名字空间名称：",
 	"sitesettings-timezone": "与GMT时间的抵消量：",
 	"sitesettings-current-gmt": "（当前GMT时间是$1或$2）",
 	"sitesettings-americandates": "使用美式日期",
@@ -22,9 +23,9 @@
 	"sitesettings-privacytab": "隐私",
 	"sitesettings-viewingpolicy": "查看",
 	"sitesettings-public": "公开",
-	"sitesettings-publicdesc": "任何人都可以阅读此站点",
+	"sitesettings-publicdesc": "任何人都可以阅读该网站",
 	"sitesettings-private": "私有",
-	"sitesettings-privatedesc": "只有注册用户可以阅读此站点",
+	"sitesettings-privatedesc": "仅注册用户可以阅读该网站",
 	"sitesettings-veryprivate": "非常私有",
 	"sitesettings-veryprivatedesc": "用户只可以查看首页和他们自己的用户页",
 	"sitesettings-registrationpolicy": "注册",
@@ -39,8 +40,8 @@
 	"sitesettings-closededitingdesc": "只有注册用户可以编辑",
 	"sitesettings-veryclosedediting": "非常关闭",
 	"sitesettings-veryclosededitingdesc": "只有管理员可以编辑",
-	"sitesettings-updated": "站点设置已更新。",
-	"sitesettings-appearanceupdated": "站点外观设置已更新。",
+	"sitesettings-updated": "网站设置已更新。",
+	"sitesettings-appearanceupdated": "网站显示设置已更新。",
 	"sitesettings-userskinsreset": "此wiki现有用户的皮肤已改为“$1”。",
 	"sitesettings-sitelogo": "标志",
 	"sitesettings-nologo": "当前无标志。",
