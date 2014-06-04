@@ -17,7 +17,7 @@ $wgSiteSettingsScriptPath = $wgScriptPath . '/extensions/SiteSettings';
 $dir = $IP . '/extensions/SiteSettings';
 ##
 
-define( 'SITE_SETTINGS_VERSION', '0.5' );
+define( 'SITE_SETTINGS_VERSION', '0.6' );
 
 /**********************************************/
 /***** credits (see "Special:Version")    *****/
