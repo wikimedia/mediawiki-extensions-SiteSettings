@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrumps"
+		]
+	},
+	"sitesettings-desc": "Pozwala na modyfikowanie ustawień za pomocą interfejsu wiki",
+	"sitesettings-current-gmt": "(aktualny czas GMT to $1 lub $2)",
+	"sitesettings-registrationpolicy": "Rejestracja",
+	"sitesettings-openeditingdesc": "Każdy może edytować",
+	"sitesettings-closededitingdesc": "Tylko zarejestrowani użytkownicy mogą edytować",
+	"sitesettings-veryclosededitingdesc": "Tylko administratorzy mogą edytować"
+}
