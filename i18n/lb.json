@@ -7,6 +7,7 @@
 	"sitesettings": "Astellunge vum Site",
 	"sitesettings-maintab": "Haapt",
 	"sitesettings-sitename": "Numm vum Site:",
+	"sitesettings-current-gmt": "(aktuell GMT-Zäit ass $1 oder $2)",
 	"sitesettings-americandates": "Benotzt dat amerikanescht Datumsformat",
 	"sitesettings-showpageviews": "Ënnen op der Säit d'Zuel vu Kéiere weisen, déi d'Säit gekuckt gouf",
 	"sitesettings-usesubpages": "Benotzt <a href=\"https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Subpages\">Ënnersäiten</a>",

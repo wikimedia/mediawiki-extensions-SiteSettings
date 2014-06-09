@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Chrumps"
+			"Chrumps",
+			"Alan ffm"
 		]
 	},
 	"sitesettings-desc": "Pozwala na modyfikowanie ustawień za pomocą interfejsu wiki",
+	"sitesettings": "Ustawienia strony",
 	"sitesettings-current-gmt": "(aktualny czas GMT to $1 lub $2)",
 	"sitesettings-registrationpolicy": "Rejestracja",
 	"sitesettings-openeditingdesc": "Każdy może edytować",
