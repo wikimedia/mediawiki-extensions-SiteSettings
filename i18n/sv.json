@@ -2,18 +2,29 @@
 	"@metadata": {
 		"authors": [
 			"Josve05a",
-			"Jopparn"
+			"Jopparn",
+			"WikiPhoenix"
 		]
 	},
 	"sitesettings": "Sidinställningar",
+	"sitesettings-sitename": "Webbplatsens namn:",
 	"sitesettings-current-gmt": "(nuvarande GMT-tid är $1 eller $2)",
+	"sitesettings-usesubpages": "Använd <a href=\"https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Subpages\">undersidor</a>",
+	"sitesettings-allowexternalimages": "Tillåt externa bilder",
+	"sitesettings-allowlowercasepagenames": "Tillåt sidnamn med gemener",
 	"sitesettings-copyrighturl": "Copyright-URL:",
 	"sitesettings-update": "Uppdatera",
+	"sitesettings-private": "Privat",
 	"sitesettings-registrationpolicy": "Registrering",
+	"sitesettings-openreg": "Öppna",
 	"sitesettings-editingpolicy": "Redigering",
 	"sitesettings-openediting": "Öppna",
+	"sitesettings-openeditingdesc": "Alla kan redigera",
+	"sitesettings-closededitingdesc": "Endast registrerade användare kan redigera",
 	"sitesettings-veryclosededitingdesc": "Endast administratörer kan redigera",
 	"sitesettings-sitelogo": "Logotyp",
+	"sitesettings-uploadlogo": "Ladda upp logotyp:",
+	"sitesettings-currentlogo": "Nuvarande logotyp:",
 	"sitesettings-removelogo": "Ta bort logotypen",
 	"sitesettings-changelogo": "Ändra logotyp:",
 	"sitesettings-logouploaded": "Logotypen har laddats upp.",
