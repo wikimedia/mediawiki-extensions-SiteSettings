@@ -13,6 +13,8 @@
 	"sitesettings-current-gmt": "(GMT での現在時刻は $1 または $2 です)",
 	"sitesettings-showpageviews": "各ページの下部にページビュー数を表示",
 	"sitesettings-usesubpages": "<a href=\"https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Subpages\">下位ページ</a>を使用",
+	"sitesettings-allowexternalimages": "外部の画像を使用できるようにする",
+	"sitesettings-allowlowercasepagenames": "小文字のページ名を使用できるようにする",
 	"sitesettings-copyrighturl": "著作権の URL:",
 	"sitesettings-update": "更新",
 	"sitesettings-privacytab": "プライバシー",
