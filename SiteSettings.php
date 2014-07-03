@@ -27,7 +27,7 @@ $wgExtensionCredits['other'][]= array(
 	'name' => 'Site Settings',
 	'version' => SITE_SETTINGS_VERSION,
 	'author' => 'Yaron Koren',
-	'url' => 'https://mediawiki.org/wiki/Site_Settings',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:Site_Settings',
 	'descriptionmsg' => 'sitesettings-desc',
 );
 
