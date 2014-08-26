@@ -8,8 +8,17 @@
 	"sitesettings-desc": "Pozwala na modyfikowanie ustawień za pomocą interfejsu wiki",
 	"sitesettings": "Ustawienia strony",
 	"sitesettings-current-gmt": "(aktualny czas GMT to $1 lub $2)",
+	"sitesettings-privacytab": "Prywatność",
 	"sitesettings-registrationpolicy": "Rejestracja",
 	"sitesettings-openeditingdesc": "Każdy może edytować",
 	"sitesettings-closededitingdesc": "Tylko zarejestrowani użytkownicy mogą edytować",
-	"sitesettings-veryclosededitingdesc": "Tylko administratorzy mogą edytować"
+	"sitesettings-veryclosededitingdesc": "Tylko administratorzy mogą edytować",
+	"sitesettings-sitelogo": "Logo",
+	"sitesettings-nologo": "Nie ma aktualnego logo.",
+	"sitesettings-uploadlogo": "Prześlij logo:",
+	"sitesettings-currentlogo": "Aktualne logo:",
+	"sitesettings-removelogo": "Usuń logo",
+	"sitesettings-changelogo": "Zmień logo:",
+	"sitesettings-logouploaded": "Logo zostało przesłane.",
+	"sitesettings-logoremoved": "Logo zostało usunięte."
 }
