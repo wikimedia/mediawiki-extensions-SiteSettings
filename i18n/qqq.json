@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Robby",
-			"Shirayuki"
+			"Shirayuki",
+			"Liuxinyu970226"
 		]
 	},
 	"sitesettings-desc": "{{desc|name=Site Settings|url=http://www.mediawiki.org/wiki/Extension:Site_Settings}}",
@@ -15,7 +16,15 @@
 	"sitesettings-allowexternalimages": "Used as label for the checkbox in [[Special:SiteSettings]].",
 	"sitesettings-allowlowercasepagenames": "Used as label for the checkbox in [[Special:SiteSettings]].",
 	"sitesettings-update": "Used as label for the Submit button.\n{{Identical|Update}}",
+	"sitesettings-privacytab": "{{Identical|Privacy}}",
+	"sitesettings-viewingpolicy": "{{Identical|Viewing}}",
 	"sitesettings-public": "{{Identical|Public}}",
+	"sitesettings-private": "{{Identical|Private}}",
+	"sitesettings-registrationpolicy": "{{Identical|Registration}}",
+	"sitesettings-openreg": "{{Identical|Open}}",
+	"sitesettings-closedreg": "{{Identical|Closed}}",
 	"sitesettings-editingpolicy": "{{Identical|Editing}}",
+	"sitesettings-openediting": "{{Identical|Open}}",
+	"sitesettings-closedediting": "{{Identical|Closed}}",
 	"sitesettings-sitelogo": "{{Identical|Logo}}"
 }
