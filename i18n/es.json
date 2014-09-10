@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fitoschido"
+			"Fitoschido",
+			"The Anonymouse"
 		]
 	},
 	"sitesettings-desc": "Permite modificar la configuración mediante una interfaz wiki",
@@ -16,6 +17,8 @@
 	"sitesettings-usesubpages": "Usar <a href=\"https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Subpages\">subpáginas</a>",
 	"sitesettings-allowexternalimages": "Permitir imágenes de sitios externos",
 	"sitesettings-allowlowercasepagenames": "Permitir nombres de páginas con minúscula inicial",
+	"sitesettings-copyrightdesc": "Descripción del derecho de autor:",
+	"sitesettings-copyrighturl": "URL del derecho de autor:",
 	"sitesettings-update": "Actualizar",
 	"sitesettings-privacytab": "Privacidad",
 	"sitesettings-viewingpolicy": "Visualización",
@@ -39,7 +42,21 @@
 	"sitesettings-veryclosededitingdesc": "Solo los administradores pueden editar",
 	"sitesettings-updated": "Se actualizó la configuración del sitio.",
 	"sitesettings-appearanceupdated": "Se actualizó la configuración de apariencia del sitio.",
+	"sitesettings-userskinsreset": "El skin para todos los usuarios existentes de este wiki se ha cambiado a \"$1\".",
 	"sitesettings-sitelogo": "Logo",
+	"sitesettings-nologo": "No hay ningún logo actual.",
+	"sitesettings-uploadlogo": "Subir logo:",
 	"sitesettings-currentlogo": "Logo actual:",
-	"sitesettings-logouploaded": "Se actualizó el logo."
+	"sitesettings-removelogo": "Remover logo",
+	"sitesettings-changelogo": "Cambiar logo:",
+	"sitesettings-logouploaded": "Se actualizó el logo.",
+	"sitesettings-logoremoved": "Se removió el logo.",
+	"sitesettings-faviconheader": "Archivo de favicon",
+	"sitesettings-nofavicon": "No hay ningún favicono actual.",
+	"sitesettings-uploadfavicon": "Subir favicon (debería llamarse \"<code>favicon.ico</code>\"):",
+	"sitesettings-currentfavicon": "Favicono actual:",
+	"sitesettings-removefavicon": "Remover favicono",
+	"sitesettings-changefavicon": "Cambiar favicono:",
+	"sitesettings-faviconuploaded": "Se actualizó el favicono.",
+	"sitesettings-faviconremoved": "Se removió el favicono."
 }
