@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Fitoschido",
-			"The Anonymouse"
+			"The Anonymouse",
+			"Macofe"
 		]
 	},
 	"sitesettings-desc": "Permite modificar la configuración mediante una interfaz wiki",
@@ -42,7 +43,7 @@
 	"sitesettings-veryclosededitingdesc": "Solo los administradores pueden editar",
 	"sitesettings-updated": "Se actualizó la configuración del sitio.",
 	"sitesettings-appearanceupdated": "Se actualizó la configuración de apariencia del sitio.",
-	"sitesettings-userskinsreset": "El skin para todos los usuarios existentes de este wiki se ha cambiado a \"$1\".",
+	"sitesettings-userskinsreset": "La apariencia para todos los usuarios existentes de este wiki se cambió a \"$1\".",
 	"sitesettings-sitelogo": "Logo",
 	"sitesettings-nologo": "No hay ningún logo actual.",
 	"sitesettings-uploadlogo": "Subir logo:",
