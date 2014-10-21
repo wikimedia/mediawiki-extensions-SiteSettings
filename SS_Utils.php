@@ -69,7 +69,7 @@ class SSUtils {
 			$ss = SpecialPage::getTitleFor( 'SiteSettings' );
 			$href = $ss->getLocalURL();
 			$site_settings_vals = array(
-				'text' => wfMsg( 'sitesettings' ),
+				'text' => wfMessage( 'sitesettings' )->text(),
 				'href' => $href,
 				'active' => ( $href == $cur_url )
 			);
