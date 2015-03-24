@@ -3,10 +3,11 @@
 		"authors": [
 			"Robby",
 			"Shirayuki",
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"Umherirrender"
 		]
 	},
-	"sitesettings-desc": "{{desc|name=Site Settings|url=http://www.mediawiki.org/wiki/Extension:Site_Settings}}",
+	"sitesettings-desc": "{{desc|name=Site Settings|url=https://www.mediawiki.org/wiki/Extension:Site_Settings}}",
 	"sitesettings": "{{doc-special|SiteSettings}}\nAlso used as link text in personal toolbar.\n{{Identical|Site settings}}",
 	"sitesettings-maintab": "Used as label for the tab in [[Special:SiteSettings]].\n{{Identical|Main}}",
 	"sitesettings-sitename": "Used as label for the \"Site name\" input box in [[Special:SiteSettings]].\n{{Identical|Sitename}}",
