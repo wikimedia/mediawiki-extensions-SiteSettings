@@ -10,7 +10,7 @@
 	"sitesettings": "Configuración del sitio",
 	"sitesettings-maintab": "Principal",
 	"sitesettings-sitename": "Nombre del sitio:",
-	"sitesettings-sitenamespace": "Nombre de espacio de nombres específico del sitio:",
+	"sitesettings-sitenamespace": "Nombre del espacio de nombres específico del sitio:",
 	"sitesettings-timezone": "Desfase de horas con respecto a GMT:",
 	"sitesettings-current-gmt": "(la hora GMT actual es $1 o $2)",
 	"sitesettings-americandates": "Fechas al estilo EE. UU.",
