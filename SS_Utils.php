@@ -16,7 +16,7 @@ class SSUtils {
 			return;
 		}
 
-		wfRunHooks( 'SiteSettingsInitializeSiteBegin' );
+		Hooks::run( 'SiteSettingsInitializeSiteBegin' );
 
 		$siteSettings = SiteSettings::newFromDatabase();
 		if ( ! is_null( $siteSettings ) ) {
@@ -25,7 +25,7 @@ class SSUtils {
 			$siteSettings = new SiteSettings();
 		}
 
-		wfRunHooks( 'SiteSettingsInitializeSiteEnd' );
+		Hooks::run( 'SiteSettingsInitializeSiteEnd' );
 	}
 
 	static function setUser( $user, $s ) {
@@ -38,7 +38,7 @@ class SSUtils {
 
 	public static function getDBForReading() {
 		$db = wfGetDB( DB_SLAVE );
-		wfRunHooks( 'SiteSettingsGetDB', array( &$db ) );
+		Hooks::run( 'SiteSettingsGetDB', array( &$db ) );
 		global $wgSiteSettingsDB;
 		$db->selectDB( $wgSiteSettingsDB );
 		return $db;
@@ -46,7 +46,7 @@ class SSUtils {
 
 	public static function getDBForWriting() {
 		$db = wfGetDB( DB_MASTER );
-		wfRunHooks( 'SiteSettingsGetDB', array( &$db ) );
+		Hooks::run( 'SiteSettingsGetDB', array( &$db ) );
 		global $wgSiteSettingsDB;
 		$db->selectDB( $wgSiteSettingsDB );
 		return $db;
@@ -55,7 +55,7 @@ class SSUtils {
 	public static function saveSiteValuesToDB( $valuesToUpdate ) {
 		$db = self::getDBForWriting();
 		$conds = array();
-		wfRunHooks( 'SiteSettingsDBConditions', array( &$conds ) );
+		Hooks::run( 'SiteSettingsDBConditions', array( &$conds ) );
 		$db->update( 'site_settings', $valuesToUpdate, $conds );
 	}
 
@@ -122,7 +122,7 @@ class SSUtils {
 
 	public static function describeDBSchema( $updater ) {
 		$continueWithUpdate = true;
-		wfRunHooks( 'SiteSettingsCreateTableBefore', array( &$continueWithUpdate ) );
+		Hooks::run( 'SiteSettingsCreateTableBefore', array( &$continueWithUpdate ) );
 		if ( !$continueWithUpdate ) {
 			return true;
 		}
@@ -130,7 +130,7 @@ class SSUtils {
 		$dir = dirname( __FILE__ );
 		//$updater->addExtensionUpdate( array( 'addTable', 'site_settings', "$dir/SiteSettings.sql", true ) );
 		$updater->addExtensionTable( 'site_settings', "$dir/SiteSettings.sql", true );
-		wfRunHooks( 'SiteSettingsCreateTableBefore', array( $updater ) );
+		Hooks::run( 'SiteSettingsCreateTableBefore', array( $updater ) );
 		return true;
 	}
 

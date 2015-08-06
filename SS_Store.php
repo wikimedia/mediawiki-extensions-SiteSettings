@@ -25,7 +25,7 @@ class SSStore {
 	}
 
 	static function loadValue( $fieldName ) {
-		wfRunHooks( 'SiteSettingsStoreLoadValue', array( $fieldName, &$value ) );
+		Hooks::run( 'SiteSettingsStoreLoadValue', array( $fieldName, &$value ) );
 		self::$fieldValues[$fieldName] = $value;
 	}
 }

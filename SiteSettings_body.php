@@ -12,7 +12,7 @@ class SiteSettings {
 		$db = SSUtils::getDBForWriting();
 
 		$conds = array();
-		wfRunHooks( 'SiteSettingsNewFromDBBegin', array (&$conds ) );
+		Hooks::run( 'SiteSettingsNewFromDBBegin', array (&$conds ) );
 		$row = $db->selectRow( 'site_settings', self::selectClause(), $conds );
 		if ( !empty( $row ) ) {
 			// Back to real DB, if the DB changed.
@@ -25,7 +25,7 @@ class SiteSettings {
 
 		$returnData = null;
 
-		wfRunHooks( 'SiteSettingsNewFromDBNoData', array ( &$returnData ) );
+		Hooks::run( 'SiteSettingsNewFromDBNoData', array ( &$returnData ) );
 
 		// If there's still no data after all that, then most likely
 		// the site_settings DB table is empty - create a row for it.
@@ -50,7 +50,7 @@ class SiteSettings {
 		$db = SSUtils::getDBForWriting();
 
 		$conds = array();
-		wfRunHooks( 'SiteSettingsNewFromDBBegin', array (&$conds ) );
+		Hooks::run( 'SiteSettingsNewFromDBBegin', array (&$conds ) );
 		$row = $db->selectRow( 'site_settings', self::selectClause(), $conds );
 		if ( !empty( $row ) ) {
 			// Back to real DB, if the DB changed.
@@ -95,7 +95,7 @@ class SiteSettings {
 			),
 		);
 
-		wfRunHooks( 'SiteSettingsGetFields', array( &$allFields ) );
+		Hooks::run( 'SiteSettingsGetFields', array( &$allFields ) );
 
 		return $allFields;
 	}
@@ -127,7 +127,7 @@ class SiteSettings {
 
 	function getImagesSubirectoryName() {
 		$imagesSubdirectory = '';
-		wfRunHooks( 'SiteSettingsGetImagesSubdirectoryName', array( $this, &$imagesSubdirectory ) );
+		Hooks::run( 'SiteSettingsGetImagesSubdirectoryName', array( $this, &$imagesSubdirectory ) );
 		return $imagesSubdirectory;
 	}
 
@@ -191,7 +191,7 @@ class SiteSettings {
 		$fieldsAndStartingValues['namespace'] = $wgSitename;
 		$fieldsAndStartingValues['language_code'] = $wgLanguageCode;
 
-		wfRunHooks( 'SiteSettingsCreateStartingValues', array( $this, &$fieldsAndStartingValues ) );
+		Hooks::run( 'SiteSettingsCreateStartingValues', array( $this, &$fieldsAndStartingValues ) );
 
 		$db = SSUtils::getDBForWriting();
 		$db->insert( 'site_settings', $fieldsAndStartingValues );
@@ -205,7 +205,7 @@ class SiteSettings {
 		global $wgRightsText, $wgRightsUrl;
 		global $wgNamespacesWithSubpages;
 
-		wfRunHooks( 'SiteSettingsLoadSettingsStart', array( $this ) );
+		Hooks::run( 'SiteSettingsLoadSettingsStart', array( $this ) );
 
 		$i = 0;
 		$wgSitename = $this->name;
@@ -228,7 +228,7 @@ class SiteSettings {
 		$this->setAppearanceSettings();
 		$this->setPermissions();
 
-		wfRunHooks( 'SiteSettingsLoadSettingsEnd', array( $this ) );
+		Hooks::run( 'SiteSettingsLoadSettingsEnd', array( $this ) );
 
 		return true;
 	}
@@ -239,7 +239,7 @@ class SiteSettings {
 		} else {
 			$text = 'private';
 		}
-		wfRunHooks( 'SiteSettingsGetPrivacyLevel', array( $this, &$text ) );
+		Hooks::run( 'SiteSettingsGetPrivacyLevel', array( $this, &$text ) );
 		return $text;
 	}
 
@@ -315,7 +315,7 @@ END;
 		}
 
 		$errorMessage = null;
-		wfRunHooks( 'SiteSettingsSaveTabSettings', array( $tabName, &$valuesToUpdate, &$errorMessage ) );
+		Hooks::run( 'SiteSettingsSaveTabSettings', array( $tabName, &$valuesToUpdate, &$errorMessage ) );
 		if ( !is_null( $errorMessage ) ) {
 			return $errorMessage;
 		}

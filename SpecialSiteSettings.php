@@ -37,14 +37,14 @@ class SpecialSiteSettings extends SpecialPage {
 				$attrs['checked'] = true;
 			}
 			$optionText = $option->getName() . ' - '. $option->getDescription();
-			wfRunHooks( 'SiteSettingsPrivacyOptionDisplay',
+			Hooks::run( 'SiteSettingsPrivacyOptionDisplay',
 				array( $group_name, $option, &$attrs, &$optionText ) );
 			$radioHTML = Html::input( $group_name, $option->getID(), 'radio', $attrs );
 			$text .= "\t" . Html::rawElement( 'label', null, $radioHTML . ' ' . $optionText );
 			$text .= "<br />\n";
 		}
 
-		wfRunHooks( 'SiteSettingsPrivacyOptionsDisplay',
+		Hooks::run( 'SiteSettingsPrivacyOptionsDisplay',
 			array( $group_name, &$text ) );
 
 		return $text;
@@ -131,7 +131,7 @@ END;
 
 END;
 
-		wfRunHooks( 'SiteSettingsMainTab', array( $siteSettings, &$text ) );
+		Hooks::run( 'SiteSettingsMainTab', array( $siteSettings, &$text ) );
 		$update_label = wfMessage( 'sitesettings-update' )->text();
 		$text .=<<<END
 	<p><input type="Submit" name="update" value="$update_label" id="prefsubmit"></p>
@@ -167,7 +167,7 @@ END;
 		$text .= "\t" . Html::element( 'h2', null, wfMessage( 'sitesettings-editingpolicy' )->text() ) . "\n";
 		$text .= $this->optionsHTML( "editing_policy_id", $editing_policies, $siteSettings->editing_policy_id );
 
-		wfRunHooks( 'SiteSettingsPrivacyTab', array( $siteSettings, &$text ) );
+		Hooks::run( 'SiteSettingsPrivacyTab', array( $siteSettings, &$text ) );
 
 		$update_label = wfMessage( 'sitesettings-update' )->text();
 		$text .=<<<END
@@ -215,7 +215,7 @@ END;
 			) . "<br />\n";
 		}
 		$text .= "</p>\n";
-		wfRunHooks( 'SiteSettingsSkinTab', array( $siteSettings, &$text ) );
+		Hooks::run( 'SiteSettingsSkinTab', array( $siteSettings, &$text ) );
 
 		$update_label = wfMessage( 'sitesettings-update' )->text();
 		$text .=<<<END
@@ -263,7 +263,7 @@ END;
 	<p><input type="Submit" name="upload_favicon" value="$upload_label"></p>
 
 END;
-		wfRunHooks( 'SiteSettingsFaviconInput', array( $siteSettings, &$text ) );
+		Hooks::run( 'SiteSettingsFaviconInput', array( $siteSettings, &$text ) );
 		return $text;
 	}
 
@@ -375,7 +375,7 @@ END;
 		} else {
 			// Let other extensions handle information saves
 			$siteSettings = SiteSettings::newFromDatabase();
-			wfRunHooks( 'SiteSettingsUpdate', array( &$siteSettings, &$text ) );
+			Hooks::run( 'SiteSettingsUpdate', array( &$siteSettings, &$text ) );
 		}
 
 		$text .=<<<END
@@ -388,7 +388,7 @@ END;
 		$text .= $this->printPrivacyTab($siteSettings );
 		$text .= $this->printSkinTab( $siteSettings );
 		$text .= $this->printLogoTab( $siteSettings, $logo_error_msg, $favicon_error_msg );
-		wfRunHooks( 'SiteSettingsTabs', array( &$text, $siteSettings ) );
+		Hooks::run( 'SiteSettingsTabs', array( &$text, $siteSettings ) );
 		$text .=<<<END
 	</div>
 	</form>
