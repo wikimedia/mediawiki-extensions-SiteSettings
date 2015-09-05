@@ -10,7 +10,7 @@
     "sitesettings-sitename": "Site name:",
     "sitesettings-sitenamespace": "Site-specific namespace name:",
     "sitesettings-timezone": "Hours offset from GMT:",
-    "sitesettings-current-gmt": "(current GMT time is $1 or $2)",
+    "sitesettings-current-gmt": "(current GMT is $1 or $2)",
     "sitesettings-americandates": "Use American-style dates",
     "sitesettings-showpageviews": "Show count of page views at the bottom of each page",
     "sitesettings-usesubpages": "Use <a href=\"https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Subpages\">subpages</a>",
