@@ -26,6 +26,8 @@
 	"sitesettings-publicdesc": "任何人可以閱讀該站",
 	"sitesettings-private": "私有",
 	"sitesettings-privatedesc": "僅註冊的使用者可以閱讀該站",
+	"sitesettings-openreg": "開啟",
 	"sitesettings-editingpolicy": "編輯",
+	"sitesettings-openediting": "開啟",
 	"sitesettings-sitelogo": "標誌"
 }
