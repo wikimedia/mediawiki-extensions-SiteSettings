@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS /*_*/site_settings (
 	background_color varchar(20) default NULL,
 	sidebar_color varchar(20) default NULL,
 	sidebar_border_color varchar(20) NULL,
-	copyright_text varchar(400) NOT NULL,
+	copyright_text varchar(255) NOT NULL,
 	copyright_url varchar(150) NOT NULL,
 	logo_file varchar(100) default NULL,
 	favicon_file varchar(50) default NULL,
