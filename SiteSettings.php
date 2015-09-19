@@ -10,13 +10,6 @@ if ( !defined( 'MEDIAWIKI' ) ) die();
 $wgSiteSettingsScriptPath = $wgScriptPath . '/extensions/SiteSettings';
 ##
 
-###
-# This is the path to your installation of Site Settings as
-# seen on your local filesystem.
-##
-$dir = $IP . '/extensions/SiteSettings';
-##
-
 define( 'SITE_SETTINGS_VERSION', '0.6' );
 
 /**********************************************/
@@ -31,7 +24,7 @@ $wgExtensionCredits['other'][]= array(
 	'descriptionmsg' => 'sitesettings-desc',
 );
 
-$wgMessagesDirs['SiteSettings'] = $dir . '/i18n';
+$wgMessagesDirs['SiteSettings'] = __DIR__ . '/i18n';
 
 $wgExtensionFunctions[] = 'SSUtils::initializeSite';
 
@@ -41,18 +34,18 @@ $wgHooks['UserGetRights'][] = 'SSUtils::blockFromReading';
 
 // Register all special pages and other classes.
 $wgSpecialPages['SiteSettings'] = 'SpecialSiteSettings';
-$wgAutoloadClasses['SpecialSiteSettings'] = $dir . '/SpecialSiteSettings.php';
+$wgAutoloadClasses['SpecialSiteSettings'] = __DIR__ . '/SpecialSiteSettings.php';
 
-$wgAutoloadClasses['SiteSettings'] = $dir . '/SiteSettings_body.php';
-$wgAutoloadClasses['SSUtils'] = $dir . '/SS_Utils.php';
-$wgAutoloadClasses['SSFieldLevel'] = $dir . '/SS_FieldLevel.php';
-$wgAutoloadClasses['SSStore'] = $dir . '/SS_Store.php';
+$wgAutoloadClasses['SiteSettings'] = __DIR__ . '/SiteSettings_body.php';
+$wgAutoloadClasses['SSUtils'] = __DIR__ . '/SS_Utils.php';
+$wgAutoloadClasses['SSFieldLevel'] = __DIR__ . '/SS_FieldLevel.php';
+$wgAutoloadClasses['SSStore'] = __DIR__ . '/SS_Store.php';
 
 $wgAvailableRights[] = 'sitesettings';
 $wgGroupPermissions['sysop']['sitesettings'] = true;
 
 $wgSiteSettingsResourceTemplate = array(
-	'localBasePath' => $dir,
+	'localBasePath' => __DIR__,
 	'remoteExtPath' => 'SiteSettings'
 );
 $wgResourceModules += array(
