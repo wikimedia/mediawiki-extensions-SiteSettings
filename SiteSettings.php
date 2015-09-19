@@ -25,6 +25,7 @@ $wgExtensionCredits['other'][]= array(
 );
 
 $wgMessagesDirs['SiteSettings'] = __DIR__ . '/i18n';
+$wgExtensionMessagesFiles['SiteSettingsAliases'] = __DIR__ . '/SiteSettings.alias.php';
 
 $wgExtensionFunctions[] = 'SSUtils::initializeSite';
 
