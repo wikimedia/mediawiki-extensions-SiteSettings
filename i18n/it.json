@@ -34,7 +34,7 @@
 	"sitesettings-veryclosededitingdesc": "Solo gli amministratori possono modificare",
 	"sitesettings-updated": "Le impostazioni del sito sono state aggiornate.",
 	"sitesettings-appearanceupdated": "Le impostazioni sull'aspetto del sito sono state aggiornate.",
-	"sitesettings-userskinsreset": "La skin per tutti gli utenti esistenti su questo wiki è stata cambiata in \"$1\".",
+	"sitesettings-userskinsreset": "Il tema per tutti gli utenti esistenti su questo wiki è stato cambiato in \"$1\".",
 	"sitesettings-sitelogo": "Logo",
 	"sitesettings-nologo": "Attualmente non c'è alcun logo.",
 	"sitesettings-uploadlogo": "Carica logo:",
