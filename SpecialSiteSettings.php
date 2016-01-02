@@ -23,8 +23,7 @@ class SpecialSiteSettings extends SpecialPage {
 
 		// Permission check
 		if( !$user->isAllowed( 'sitesettings' ) ) {
-			$out->permissionRequired( 'sitesettings' );
-			return;
+			throw new PermissionsError( 'sitesettings' );
 		}
 		$this->doSpecialSiteSettings();
 	}
