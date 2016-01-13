@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"DCLXVI"
+			"DCLXVI",
+			"Vodnokon4e"
 		]
 	},
+	"sitesettings": "Настройки на сайта",
 	"sitesettings-sitelogo": "Лого"
 }
