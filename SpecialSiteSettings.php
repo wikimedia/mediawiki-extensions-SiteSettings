@@ -15,6 +15,10 @@ class SpecialSiteSettings extends SpecialPage {
 		parent::__construct( 'SiteSettings' );
 	}
 
+	public function doesWrites() {
+		return true;
+	}
+
 	function execute($query) {
 		$user = $this->getUser();
 		$out = $this->getOutput();
