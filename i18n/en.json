@@ -52,7 +52,7 @@
 	"sitesettings-logoremoved": "Logo was removed.",
 	"sitesettings-faviconheader": "Favicon file",
 	"sitesettings-nofavicon": "There is no current favicon.",
-	"sitesettings-uploadfavicon": "Upload favicon (it should be called \"<code>favicon.ico</code>\"):",
+	"sitesettings-uploadfavicon": "Upload favicon (it should be called <code>favicon.ico</code>):",
 	"sitesettings-currentfavicon": "Current favicon:",
 	"sitesettings-removefavicon": "Remove favicon",
 	"sitesettings-changefavicon": "Change favicon:",
