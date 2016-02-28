@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Meshkov.a",
-			"Okras"
+			"Okras",
+			"Macofe"
 		]
 	},
 	"sitesettings-desc": "Позволяет изменять настройки через вики-интерфейс",
@@ -53,7 +54,7 @@
 	"sitesettings-logoremoved": "Логотип был удален.",
 	"sitesettings-faviconheader": "Файл иконки сайта (Favicon)",
 	"sitesettings-nofavicon": "Нет текущей иконки сайта (favicon).",
-	"sitesettings-uploadfavicon": "Загрузить иконки сайта favicon (он должен называться \"<код>favicon.ico</code>\"):",
+	"sitesettings-uploadfavicon": "Загрузить иконки сайта favicon (он должен называться <код>favicon.ico</code>):",
 	"sitesettings-currentfavicon": "Текущая иконка сайта (favicon):",
 	"sitesettings-removefavicon": "Удалить иконку сайта (favicon)",
 	"sitesettings-changefavicon": "Изменить иконку сайта (favicon):",

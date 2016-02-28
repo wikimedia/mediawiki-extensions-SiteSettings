@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Shirayuki"
+			"Shirayuki",
+			"Macofe"
 		]
 	},
 	"sitesettings-desc": "設定をウィキ インターフェイスで変更できるようにする",
@@ -42,7 +43,7 @@
 	"sitesettings-logoremoved": "ロゴを除去しました。",
 	"sitesettings-faviconheader": "Favicon ファイル",
 	"sitesettings-nofavicon": "現在の Favicon はありません。",
-	"sitesettings-uploadfavicon": "Favicon のアップロード (ファイル名は「<code>favicon.ico</code>」):",
+	"sitesettings-uploadfavicon": "Favicon のアップロード (ファイル名は<code>favicon.ico</code>):",
 	"sitesettings-currentfavicon": "現在の Favicon:",
 	"sitesettings-removefavicon": "Favicon を除去",
 	"sitesettings-changefavicon": "Favicon の変更:",

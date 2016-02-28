@@ -4,7 +4,8 @@
 			"Josve05a",
 			"Jopparn",
 			"WikiPhoenix",
-			"Lokal Profil"
+			"Lokal Profil",
+			"Macofe"
 		]
 	},
 	"sitesettings-desc": "Gör det möjligt att ändra inställningar genom ett wiki-gränssnitt",
@@ -55,7 +56,7 @@
 	"sitesettings-logoremoved": "Logotypen togs bort.",
 	"sitesettings-faviconheader": "Favicon-fil",
 	"sitesettings-nofavicon": "Det finns ingen aktuell favicon.",
-	"sitesettings-uploadfavicon": "Ladda upp favicon (det bör heta \"<code>favicon.ico</code>\"):",
+	"sitesettings-uploadfavicon": "Ladda upp favicon (det bör heta <code>favicon.ico</code>):",
 	"sitesettings-currentfavicon": "Nuvarande favicon:",
 	"sitesettings-removefavicon": "Ta bort favicon",
 	"sitesettings-changefavicon": "Ändra favicon:",

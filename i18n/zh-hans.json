@@ -3,7 +3,8 @@
 		"authors": [
 			"Liuxinyu970226",
 			"Mywood",
-			"Impersonator 1"
+			"Impersonator 1",
+			"Macofe"
 		]
 	},
 	"sitesettings-desc": "允许通过wiki界面修改设置",
@@ -54,7 +55,7 @@
 	"sitesettings-logoremoved": "标志已移除。",
 	"sitesettings-faviconheader": "图标文件",
 	"sitesettings-nofavicon": "当前无图标。",
-	"sitesettings-uploadfavicon": "上传图标（应使用文件名“<code>favicon.ico</code>”）：",
+	"sitesettings-uploadfavicon": "上传图标（应使用文件名<code>favicon.ico</code>）：",
 	"sitesettings-currentfavicon": "当前图标：",
 	"sitesettings-removefavicon": "移除图标",
 	"sitesettings-changefavicon": "更改图标：",

@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vitorvicentevalente"
+			"Vitorvicentevalente",
+			"Macofe"
 		]
 	},
 	"sitesettings-desc": "Permite modificar as configurações através de uma interface wiki",
@@ -49,7 +50,7 @@
 	"sitesettings-logoremoved": "O logótipo foi removido.",
 	"sitesettings-faviconheader": "Ficheiro favicon",
 	"sitesettings-nofavicon": "Não existe nenhum favicon atualmente.",
-	"sitesettings-uploadfavicon": "Carregar favicon (deve ser intitulado \"<code>favicon.ico</code>\"):",
+	"sitesettings-uploadfavicon": "Carregar favicon (deve ser intitulado <code>favicon.ico</code>):",
 	"sitesettings-currentfavicon": "Favicon atual:",
 	"sitesettings-removefavicon": "Remover favicon",
 	"sitesettings-changefavicon": "Alterar favicon:",

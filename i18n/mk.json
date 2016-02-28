@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bjankuloski06"
+			"Bjankuloski06",
+			"Macofe"
 		]
 	},
 	"sitesettings-desc": "Овозможува менување на поставките преку википосредник",
@@ -52,7 +53,7 @@
 	"sitesettings-logoremoved": "Логото е отстрането.",
 	"sitesettings-faviconheader": "Податотека на иконката",
 	"sitesettings-nofavicon": "Засега нема иконка.",
-	"sitesettings-uploadfavicon": "Подигни иконка (треба да се нарекува „<code>favicon.ico</code>“):",
+	"sitesettings-uploadfavicon": "Подигни иконка (треба да се нарекува <code>favicon.ico</code>):",
 	"sitesettings-currentfavicon": "Тековна иконка:",
 	"sitesettings-removefavicon": "Отстрани иконка",
 	"sitesettings-changefavicon": "Смени иконка:",

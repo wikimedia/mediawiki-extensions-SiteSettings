@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Macofe"
 		]
 	},
 	"sitesettings": "Astellunge vum Site",
@@ -47,7 +48,7 @@
 	"sitesettings-logoremoved": "De Logo gouf ewechgeholl.",
 	"sitesettings-faviconheader": "Favicon-Fichier",
 	"sitesettings-nofavicon": "Et gëtt elo kee Favicon.",
-	"sitesettings-uploadfavicon": "Favicon eroplueden (soll „<code>favicon.ico</code>“ heeschen):",
+	"sitesettings-uploadfavicon": "Favicon eroplueden (soll <code>favicon.ico</code> heeschen):",
 	"sitesettings-currentfavicon": "Aktuelle Favicon:",
 	"sitesettings-removefavicon": "Favicon ewechhuelen",
 	"sitesettings-changefavicon": "Favicon änneren:",

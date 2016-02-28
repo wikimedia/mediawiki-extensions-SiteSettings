@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Artificial123"
+			"Artificial123",
+			"Macofe"
 		]
 	},
 	"sitesettings-desc": "Дапускае змену параметраў праз інтэрфейс Вікі",
@@ -14,6 +15,6 @@
 	"sitesettings-openeditingdesc": "Кожны можа рэдагаваць",
 	"sitesettings-uploadlogo": "Загрузіць лагатып:",
 	"sitesettings-currentlogo": "Цяперашні лагатып:",
-	"sitesettings-uploadfavicon": "Загрузіць favicon (яго варта было б назваць \"<code>favicon.ico</code>\"):",
+	"sitesettings-uploadfavicon": "Загрузіць favicon (яго варта было б назваць <code>favicon.ico</code>):",
 	"sitesettings-currentfavicon": "Цяперашні favicon:"
 }

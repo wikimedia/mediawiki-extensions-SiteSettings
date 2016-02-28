@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Xuacu"
+			"Xuacu",
+			"Macofe"
 		]
 	},
 	"sitesettings-desc": "Permite camudar la configuración por aciu una interfaz wiki",
@@ -52,7 +53,7 @@
 	"sitesettings-logoremoved": "Desanicióse'l logo.",
 	"sitesettings-faviconheader": "Ficheru de favicon",
 	"sitesettings-nofavicon": "Nun hai nengún favicon actual.",
-	"sitesettings-uploadfavicon": "Xubir favicon (tendría de llamase \"<code>favicon.ico</code>\"):",
+	"sitesettings-uploadfavicon": "Xubir favicon (tendría de llamase <code>favicon.ico</code>):",
 	"sitesettings-currentfavicon": "Favicon actual:",
 	"sitesettings-removefavicon": "Quitar favicon",
 	"sitesettings-changefavicon": "Camudar favicon:",

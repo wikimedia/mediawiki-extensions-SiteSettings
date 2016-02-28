@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ата"
+			"Ата",
+			"Macofe"
 		]
 	},
 	"sitesettings-desc": "Дозволяє змінювати налаштування через віі-інтерфейс",
@@ -52,7 +53,7 @@
 	"sitesettings-logoremoved": "Логотип був вилучений.",
 	"sitesettings-faviconheader": "Файл іконки сайту (favicon)",
 	"sitesettings-nofavicon": "Немає поточного favicon'у.",
-	"sitesettings-uploadfavicon": "Завантажити favicon (його слід назвати \"<code>favicon.ico</code>\"):",
+	"sitesettings-uploadfavicon": "Завантажити favicon (його слід назвати <code>favicon.ico</code>):",
 	"sitesettings-currentfavicon": "Поточний favicon:",
 	"sitesettings-removefavicon": "Вилучити favicon",
 	"sitesettings-changefavicon": "Змінити favicon:",

@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Beta16",
-			"Lord Ghiraim"
+			"Lord Ghiraim",
+			"Macofe"
 		]
 	},
 	"sitesettings-desc": "Permette di modificare le impostazioni attraverso un'interfaccia wiki",
@@ -44,7 +45,7 @@
 	"sitesettings-changelogo": "Modifica logo:",
 	"sitesettings-logouploaded": "Il logo è stato caricato.",
 	"sitesettings-logoremoved": "Il logo è stato rimosso.",
-	"sitesettings-uploadfavicon": "Carica favicon (dovrebbe essere chiamata \"<code>favicon.ico</code>\"):",
+	"sitesettings-uploadfavicon": "Carica favicon (dovrebbe essere chiamata <code>favicon.ico</code>):",
 	"sitesettings-currentfavicon": "Favicon attuale:",
 	"sitesettings-removefavicon": "Rimuovi favicon",
 	"sitesettings-changefavicon": "Modifica favicon:",
