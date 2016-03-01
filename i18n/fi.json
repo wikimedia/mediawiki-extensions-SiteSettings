@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Stryn"
+			"Stryn",
+			"Nike"
 		]
 	},
-	"sitesettings": "Sivuston asetukset"
+	"sitesettings": "Sivuston asetukset",
+	"sitesettings-uploadfavicon": "Tallenna favicon (nimen tulisi olla <code>favicon.ico</code>):"
 }
