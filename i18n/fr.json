@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Gomoko",
-			"Macofe"
+			"Macofe",
+			"Wladek92"
 		]
 	},
 	"sitesettings-desc": "Autorise la modification des paramètres via une interface wiki",
@@ -53,7 +54,7 @@
 	"sitesettings-logoremoved": "Le logo a été supprimé.",
 	"sitesettings-faviconheader": "Fichier de favicon",
 	"sitesettings-nofavicon": "Il n’y a pas actuellement de favicon.",
-	"sitesettings-uploadfavicon": "Télécharger un favicon (il sera appelé <code>favicon.ico</code>) :",
+	"sitesettings-uploadfavicon": "Télécharger un favicon (il devrait s'appeler <code>favicon.ico</code>) :",
 	"sitesettings-currentfavicon": "Favicon actuel :",
 	"sitesettings-removefavicon": "Supprimer le favicon",
 	"sitesettings-changefavicon": "Modifier le favicon :",
