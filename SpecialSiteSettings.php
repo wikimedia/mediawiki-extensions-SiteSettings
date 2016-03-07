@@ -68,7 +68,7 @@ END;
 		global $wgLanguageCode;
 
 		// Code based on dropdown menu from SpecialPreferences.php.
-		$languages = Language::getLanguageNames( true );
+		$languages = Language::fetchLanguageNames( null, 'mwfile' );
 		if ( !array_key_exists( $wgLanguageCode, $languages ) ) {
 			$languages[$siteSettings->language_code] = $siteSettings->language_code;
 		}
