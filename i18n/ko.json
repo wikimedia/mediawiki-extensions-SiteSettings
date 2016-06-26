@@ -5,7 +5,8 @@
 			"Revi",
 			"아라",
 			"Idh0854",
-			"Macofe"
+			"Macofe",
+			"Ykhwong"
 		]
 	},
 	"sitesettings-desc": "위키 인터페이스를 통해 설정을 수정할 수 있습니다",
@@ -14,7 +15,7 @@
 	"sitesettings-sitename": "사이트 이름:",
 	"sitesettings-sitenamespace": "사이트 별 이름공간 이름:",
 	"sitesettings-timezone": "GMT로부터의 시간차:",
-	"sitesettings-current-gmt": "(현재 GMT 시간은 $1 혹은 $2 입니다)",
+	"sitesettings-current-gmt": "(현재 GMT는 $1 혹은 $2입니다)",
 	"sitesettings-americandates": "미국식 날짜 사용",
 	"sitesettings-showpageviews": "각 문서 아래에 조회 수 보여주기",
 	"sitesettings-usesubpages": "<a href=\"https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Subpages\"> 하위 문서 </a> 사용",
