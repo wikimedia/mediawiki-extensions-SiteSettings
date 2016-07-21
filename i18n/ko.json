@@ -46,7 +46,7 @@
 	"sitesettings-veryclosededitingdesc": "관리자만이 편집할 수 있습니다",
 	"sitesettings-updated": "사이트 설정이 업데이트되었습니다.",
 	"sitesettings-appearanceupdated": "사이트 보기 설정이 업데이트되었습니다.",
-	"sitesettings-userskinsreset": "모든 존재하는 사용자의 스킨이 \"$1\"로 변경되었습니다.",
+	"sitesettings-userskinsreset": "모든 존재하는 사용자의 스킨이 \"$1\"(으)로 바뀌었습니다.",
 	"sitesettings-sitelogo": "로고",
 	"sitesettings-nologo": "현재 로고가 없습니다",
 	"sitesettings-uploadlogo": "로고 업로드:",
