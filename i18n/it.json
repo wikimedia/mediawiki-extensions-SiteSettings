@@ -3,14 +3,18 @@
 		"authors": [
 			"Beta16",
 			"Lord Ghiraim",
-			"Macofe"
+			"Macofe",
+			"Selven"
 		]
 	},
 	"sitesettings-desc": "Permette di modificare le impostazioni attraverso un'interfaccia wiki",
 	"sitesettings": "Impostazioni sito",
 	"sitesettings-maintab": "Principale",
 	"sitesettings-sitename": "Nome sito:",
+	"sitesettings-timezone": "Ore di differenza da GMT:",
+	"sitesettings-current-gmt": "(il GMT attuale è $1 o $2)",
 	"sitesettings-allowexternalimages": "Consenti immagini esterne",
+	"sitesettings-allowlowercasepagenames": "Consentire i nomi delle pagine in minuscolo",
 	"sitesettings-copyrightdesc": "Descrizione copyright:",
 	"sitesettings-copyrighturl": "URL copyright:",
 	"sitesettings-update": "Aggiorna",
@@ -45,9 +49,12 @@
 	"sitesettings-changelogo": "Modifica logo:",
 	"sitesettings-logouploaded": "Il logo è stato caricato.",
 	"sitesettings-logoremoved": "Il logo è stato rimosso.",
+	"sitesettings-faviconheader": "File favicon",
+	"sitesettings-nofavicon": "La favicon non è impostata.",
 	"sitesettings-uploadfavicon": "Carica favicon (dovrebbe essere chiamata <code>favicon.ico</code>):",
 	"sitesettings-currentfavicon": "Favicon attuale:",
 	"sitesettings-removefavicon": "Rimuovi favicon",
 	"sitesettings-changefavicon": "Modifica favicon:",
+	"sitesettings-faviconuploaded": "La favicon è stata caricata.",
 	"sitesettings-faviconremoved": "La favicon è stata rimossa."
 }
