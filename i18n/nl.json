@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"SPQRobin",
-			"Mar(c)"
+			"Mar(c)",
+			"Mainframe98"
 		]
 	},
 	"sitesettings-usesubpages": "<a href=\"https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Subpages\">Subpagina's</a> gebruiken",
@@ -11,5 +12,6 @@
 	"sitesettings-closedregdesc": "Gebruikers kunnen alleen door een beheerder worden toegevoegd",
 	"sitesettings-openeditingdesc": "Iedereen kan bewerken",
 	"sitesettings-closededitingdesc": "Alleen geregistreerde gebruikers kunnen bewerken",
-	"sitesettings-veryclosededitingdesc": "Alleen beheerders kunnen bewerken"
+	"sitesettings-veryclosededitingdesc": "Alleen beheerders kunnen bewerken",
+	"sitesettings-sitelogo": "Logo"
 }

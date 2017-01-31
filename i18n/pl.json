@@ -2,14 +2,18 @@
 	"@metadata": {
 		"authors": [
 			"Chrumps",
-			"Alan ffm"
+			"Alan ffm",
+			"Sp5uhe"
 		]
 	},
 	"sitesettings-desc": "Pozwala na modyfikowanie ustawień za pomocą interfejsu wiki",
 	"sitesettings": "Ustawienia strony",
 	"sitesettings-current-gmt": "(aktualny czas GMT to $1 lub $2)",
 	"sitesettings-privacytab": "Prywatność",
+	"sitesettings-veryprivatedesc": "Użytkownicy mogą przeglądać tylko główną i własną stronę",
 	"sitesettings-registrationpolicy": "Rejestracja",
+	"sitesettings-openregdesc": "Każdy może się zarejestrować",
+	"sitesettings-closedregdesc": "Użytkownicy mogą zostać dodani tylko przez administratora",
 	"sitesettings-openeditingdesc": "Każdy może edytować",
 	"sitesettings-closededitingdesc": "Tylko zarejestrowani użytkownicy mogą edytować",
 	"sitesettings-veryclosededitingdesc": "Tylko administratorzy mogą edytować",
