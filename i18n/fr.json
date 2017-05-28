@@ -3,7 +3,8 @@
 		"authors": [
 			"Gomoko",
 			"Macofe",
-			"Wladek92"
+			"Wladek92",
+			"Urhixidur"
 		]
 	},
 	"sitesettings-desc": "Autorise la modification des paramètres via une interface wiki",
@@ -46,7 +47,7 @@
 	"sitesettings-userskinsreset": "L’habillage pour tous les utilisateurs existants de ce wiki a été modifié en « $1 ».",
 	"sitesettings-sitelogo": "Logo",
 	"sitesettings-nologo": "Il n’y a pas de logo actuel.",
-	"sitesettings-uploadlogo": "Télécharger le logo :",
+	"sitesettings-uploadlogo": "Téléverser le logo :",
 	"sitesettings-currentlogo": "Logo actuel :",
 	"sitesettings-removelogo": "Supprimer le logo",
 	"sitesettings-changelogo": "Modifier le logo :",
@@ -54,7 +55,7 @@
 	"sitesettings-logoremoved": "Le logo a été supprimé.",
 	"sitesettings-faviconheader": "Fichier de favicon",
 	"sitesettings-nofavicon": "Il n’y a pas actuellement de favicon.",
-	"sitesettings-uploadfavicon": "Télécharger un favicon (il devrait s'appeler <code>favicon.ico</code>) :",
+	"sitesettings-uploadfavicon": "Téléverser une icône favorite (elle doit s’appeler <code>favicon.ico</code>) :",
 	"sitesettings-currentfavicon": "Favicon actuel :",
 	"sitesettings-removefavicon": "Supprimer le favicon",
 	"sitesettings-changefavicon": "Modifier le favicon :",
