@@ -6,11 +6,15 @@
 			"Mainframe98"
 		]
 	},
+	"sitesettings-sitename": "Websitenaam:",
 	"sitesettings-usesubpages": "<a href=\"https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Subpages\">Subpagina's</a> gebruiken",
+	"sitesettings-privacytab": "Privacy",
 	"sitesettings-publicdesc": "Iedereen kan de site lezen",
 	"sitesettings-privatedesc": "Alleen geregistreerde gebruikers kunnen de site lezen",
+	"sitesettings-registrationpolicy": "Registratie",
 	"sitesettings-closedregdesc": "Gebruikers kunnen alleen door een beheerder worden toegevoegd",
 	"sitesettings-openeditingdesc": "Iedereen kan bewerken",
+	"sitesettings-closedediting": "Gesloten",
 	"sitesettings-closededitingdesc": "Alleen geregistreerde gebruikers kunnen bewerken",
 	"sitesettings-veryclosededitingdesc": "Alleen beheerders kunnen bewerken",
 	"sitesettings-sitelogo": "Logo"
