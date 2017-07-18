@@ -9,6 +9,7 @@
 	"sitesettings-sitename": "Websitenaam:",
 	"sitesettings-usesubpages": "<a href=\"https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Subpages\">Subpagina's</a> gebruiken",
 	"sitesettings-privacytab": "Privacy",
+	"sitesettings-public": "Openbaar",
 	"sitesettings-publicdesc": "Iedereen kan de site lezen",
 	"sitesettings-privatedesc": "Alleen geregistreerde gebruikers kunnen de site lezen",
 	"sitesettings-registrationpolicy": "Registratie",
