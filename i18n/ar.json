@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hiba Alshawi"
+			"Hiba Alshawi",
+			"ديفيد"
 		]
 	},
-	"sitesettings-current-gmt": "(GMT الحالي هو 1 $ أو 2 $)"
+	"sitesettings-current-gmt": "(GMT الحالي هو $1 أو $2)"
 }
