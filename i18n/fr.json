@@ -29,7 +29,7 @@
 	"sitesettings-private": "Privé",
 	"sitesettings-privatedesc": "Seuls les utilisateurs enregistrés peuvent lire le site",
 	"sitesettings-veryprivate": "Très privé",
-	"sitesettings-veryprivatedesc": "Les utilisateurs ne peuvent voir que la page principale et leur propre page utilisateur",
+	"sitesettings-veryprivatedesc": "Les utilisateurs ne peuvent voir que la page principale et leur propre page d’utilisateur",
 	"sitesettings-registrationpolicy": "Inscription",
 	"sitesettings-openreg": "Ouvert",
 	"sitesettings-openregdesc": "Tout le monde peut s’inscrire",
