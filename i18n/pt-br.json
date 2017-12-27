@@ -1,8 +1,17 @@
 {
 	"@metadata": {
 		"authors": [
-			"Felipe L. Ewald"
+			"Felipe L. Ewald",
+			"Eduardo Addad de Oliveira"
 		]
 	},
+	"sitesettings-desc": "Permite modificar as configurações através de uma interface wiki",
+	"sitesettings": "Configurações do site",
+	"sitesettings-maintab": "Principal",
+	"sitesettings-sitename": "Nome do site:",
+	"sitesettings-sitenamespace": "Nome do espaço nominal específico do site:",
+	"sitesettings-timezone": "Desfasamento em horas do GMT:",
+	"sitesettings-current-gmt": "(a hora GMT atual é $1 ou $2)",
+	"sitesettings-americandates": "Usar datas de estilo americano",
 	"sitesettings-openreg": "Aberto"
 }
