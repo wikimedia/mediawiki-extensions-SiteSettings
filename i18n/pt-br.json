@@ -13,5 +13,22 @@
 	"sitesettings-timezone": "Desfasamento em horas do GMT:",
 	"sitesettings-current-gmt": "(a hora GMT atual é $1 ou $2)",
 	"sitesettings-americandates": "Usar datas de estilo americano",
-	"sitesettings-openreg": "Aberto"
+	"sitesettings-showpageviews": "Mostrar número de visionamentos da página, na parte inferior de cada página",
+	"sitesettings-usesubpages": "Usar <a href=\"https://www.mediawiki.org/wiki/Especial:MyLanguage/Ajuda:Subpáginas\">subpáginas</a>",
+	"sitesettings-allowexternalimages": "Permitir imagens externas",
+	"sitesettings-allowlowercasepagenames": "Permitir nomes de páginas em minúsculas",
+	"sitesettings-copyrightdesc": "Descrição dos direitos de autor:",
+	"sitesettings-copyrighturl": "URL dos direitos de autor:",
+	"sitesettings-update": "Atualizar",
+	"sitesettings-privacytab": "Privacidade",
+	"sitesettings-viewingpolicy": "Visualização",
+	"sitesettings-public": "Público",
+	"sitesettings-publicdesc": "Todos podem ler o site",
+	"sitesettings-private": "Privado",
+	"sitesettings-privatedesc": "Somente usuários registrados podem ler o site",
+	"sitesettings-veryprivate": "Muito privado",
+	"sitesettings-registrationpolicy": "Registro",
+	"sitesettings-openreg": "Aberto",
+	"sitesettings-openregdesc": "Todos se podem registar",
+	"sitesettings-closedreg": "Fechado"
 }
