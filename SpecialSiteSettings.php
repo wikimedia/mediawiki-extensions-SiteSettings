@@ -313,9 +313,7 @@ END;
 
 		// add CSS and JS
 		$out->addModules( 'ext.sitesettings.main' );
-		//$out->addModules( 'ext.sitesettings.tabs' );
 		$out->addModules( 'mediawiki.special.preferences' );
-		//$out->addModules( 'mediawiki.special.prefs' );
 
 		// initialize variables
 		$siteSettings = new SiteSettings();
