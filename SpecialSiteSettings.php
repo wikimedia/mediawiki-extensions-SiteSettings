@@ -19,7 +19,7 @@ class SpecialSiteSettings extends SpecialPage {
 		return true;
 	}
 
-	function execute($query) {
+	function execute( $query ) {
 		$user = $this->getUser();
 		$out = $this->getOutput();
 
@@ -29,6 +29,7 @@ class SpecialSiteSettings extends SpecialPage {
 		if( !$user->isAllowed( 'sitesettings' ) ) {
 			throw new PermissionsError( 'sitesettings' );
 		}
+
 		$this->doSpecialSiteSettings();
 	}
 
@@ -36,7 +37,7 @@ class SpecialSiteSettings extends SpecialPage {
 		$text = "";
 		foreach ( $options_array as $option ) {
 			$attrs = array();
-			if ($option->getID() == $cur_value) {
+			if ( $option->getID() == $cur_value ) {
 				$attrs['checked'] = true;
 			}
 			$optionText = $option->getName() . ' - '. $option->getDescription();
@@ -53,22 +54,22 @@ class SpecialSiteSettings extends SpecialPage {
 		return $text;
 	}
 
-	public static function printTab( $tab_name, $tab_body, $tab_id ) {
+	public static function printTab( $tabInfo ) {
 		$text =<<<END
-	<fieldset id="mw-prefsection-$tab_id">
-	<legend>$tab_name</legend>
-$tab_body
+	<fieldset id="mw-prefsection-{$tabInfo['id']}">
+	<legend>{$tabInfo['title']}</legend>
+{$tabInfo['body']}
 	</fieldset>
 
 END;
 		return $text;
 	}
 
-	function printMainTab( $siteSettings ) {
+	function mainTabBody( $siteSettings ) {
 		global $wgLanguageCode;
 
 		// Code based on dropdown menu from SpecialPreferences.php.
-		$languages = Language::fetchLanguageNames( null, 'mwfile' );
+		$languages = Language::fetchLanguageNames( null, 'mw' );
 		if ( !array_key_exists( $wgLanguageCode, $languages ) ) {
 			$languages[$siteSettings->language_code] = $siteSettings->language_code;
 		}
@@ -140,10 +141,11 @@ END;
 	<p><input type="Submit" name="update" value="$update_label" id="prefsubmit"></p>
 
 END;
-		return $this->printTab( wfMessage( 'sitesettings-maintab' )->text(), $text , "main");
+
+		return $text;
 	}
 
-	function printPrivacyTab($siteSettings) {
+	function privacyTabBody( $siteSettings ) {
 		// Viewing policy
 		$viewing_policies = array(
 			SSFieldLevel::create( 1, wfMessage( 'sitesettings-public' )->text(), wfMessage( 'sitesettings-publicdesc' )->text() ),
@@ -177,21 +179,22 @@ END;
 	<p><input type="Submit" name="update-privacy" value="$update_label" id="prefsubmit"></p>
 
 END;
-		return $this->printTab( wfMessage( 'sitesettings-privacytab' )->text(), $text, "privacy" );
+
+		return $text;
 	}
 
-	function printSkinTab($siteSettings) {
+	function skinTabBody( $siteSettings ) {
 		global $wgDefaultSkin;
 
 		$validSkinNames = Skin::getSkinNames();
 		# Sort by UI skin name. First though need to update validSkinNames as sometimes
 		# the skinkey & UI skinname differ (e.g. "standard" skinkey is "Classic" in the UI).
-		foreach ($validSkinNames as $skinkey => & $skinname ) {
+		foreach ( $validSkinNames as $skinkey => & $skinname ) {
 			if ( isset( $skinNames[$skinkey] ) ) {
 				$skinname = $skinNames[$skinkey];
 			}
 		}
-		asort($validSkinNames);
+		asort( $validSkinNames );
 		// Default to $wgDefaultSkin, if skin isn't set.
 		$selectedSkin = isset( $siteSettings->default_skin ) ? $siteSettings->default_skin : $wgDefaultSkin;
 		$default_skin_label = wfMessage('prefs-skin')->text();
@@ -231,7 +234,8 @@ END;
 	<p><input type="Submit" name="reset-user-skins" value="Reset all skins" id="prefsubmit"></p>
 
 END;
-		return $this->printTab( $default_skin_label, $text, "skin" );
+
+		return $text;
 
 	}
 
@@ -270,11 +274,11 @@ END;
 		return $text;
 	}
 
-	function printLogoTab( $siteSettings, $logo_error_msg, $favicon_error_msg ) {
+	function logoTabBody( $siteSettings, $logo_error_msg, $favicon_error_msg ) {
 		$text = "\t" . Html::element( 'h2', null, wfMessage( 'sitesettings-sitelogo' )->text() ) . "\n";
 
 		$current_logo = $siteSettings->logo_file;
-		if ($current_logo) {
+		if ( $current_logo ) {
 			global $wgLogo;
 			$current_logo_label = wfMessage( 'sitesettings-currentlogo' )->text();
 			$remove_logo_label = wfMessage( 'sitesettings-removelogo' )->text();
@@ -299,7 +303,8 @@ END;
 
 END;
 		$text .= self::printFaviconSection( $siteSettings, $favicon_error_msg );
-		return $this->printTab( wfMessage( 'sitesettings-sitelogo' )->text(), $text, "logo" );
+
+		return $text;
 	}
 
 	function doSpecialSiteSettings() {
@@ -307,8 +312,10 @@ END;
 		$request = $this->getRequest();
 
 		// add CSS and JS
-		$out->addModules( 'mediawiki.special.preferences' );
 		$out->addModules( 'ext.sitesettings.main' );
+		//$out->addModules( 'ext.sitesettings.tabs' );
+		$out->addModules( 'mediawiki.special.preferences' );
+		//$out->addModules( 'mediawiki.special.prefs' );
 
 		// initialize variables
 		$siteSettings = new SiteSettings();
@@ -356,8 +363,8 @@ END;
 			}
 			$text .= '<div class="successbox">' . wfMessage( 'sitesettings-userskinsreset', $siteSettings->default_skin )->text() . "</div>\n";
 		} elseif ( $request->getCheck( 'upload_logo' ) ) {
-			if (isset($_FILES['logo_file']['name']) && $_FILES['logo_file']['name'] != '') {
-				$logo_error_msg = $siteSettings->setLogo($_FILES['logo_file']['name'], $_FILES['logo_file']['tmp_name']);
+			if ( isset( $_FILES['logo_file']['name']) && $_FILES['logo_file']['name'] != '' ) {
+				$logo_error_msg = $siteSettings->setLogo( $_FILES['logo_file']['name'], $_FILES['logo_file']['tmp_name'] );
 				$text .= '<div class="successbox">' . wfMessage( 'sitesettings-logouploaded' )->text() . "</div>\n";
 			}
 			$siteSettings = SiteSettings::newFromDatabase();
@@ -366,8 +373,8 @@ END;
 			$siteSettings = SiteSettings::newFromDatabase();
 			$text .= '<div class="successbox">' . wfMessage( 'sitesettings-logoremoved' )->text() . "</div>\n";
 		} elseif ( $request->getCheck( 'upload_favicon' ) ) {
-			if (isset($_FILES['favicon_file']['name']) && $_FILES['favicon_file']['name'] != '') {
-				$favicon_error_msg = $siteSettings->setFavicon($_FILES['favicon_file']['name'], $_FILES['favicon_file']['tmp_name']);
+			if ( isset( $_FILES['favicon_file']['name']) && $_FILES['favicon_file']['name'] != '') {
+				$favicon_error_msg = $siteSettings->setFavicon( $_FILES['favicon_file']['name'], $_FILES['favicon_file']['tmp_name'] );
 				$text .= '<div class="successbox">' . wfMessage( 'sitesettings-faviconuploaded' )->text() . "</div>\n";
 			}
 			$siteSettings = SiteSettings::newFromDatabase();
@@ -381,16 +388,64 @@ END;
 			Hooks::run( 'SiteSettingsUpdate', array( &$siteSettings, &$text ) );
 		}
 
+		$allTabInfo = array(
+			array(
+				// Total @HACK - why is the ID for this tab
+				// 'personal', instead of 'main'? Because the
+				// JS for Special:Preferences, which is being
+				// used here, assumes that the first tab will
+				// be called 'personal' when making it the
+				// default selected tab.
+				'id' => 'personal',
+				'title' => wfMessage( 'sitesettings-maintab' )->text(),
+				'body' => $this->mainTabBody( $siteSettings )
+			),
+			array(
+				'id' => 'privacy',
+				'title' => wfMessage( 'sitesettings-privacytab' )->text(),
+				'body' => $this->privacyTabBody( $siteSettings )
+			),
+			array(
+				'id' => 'skin',
+				'title' => wfMessage('prefs-skin')->text(),
+				'body' => $this->skinTabBody( $siteSettings )
+			),
+			array(
+				'id' => 'logo',
+				'title' => wfMessage( 'sitesettings-sitelogo' )->text(),
+				'body' => $this->logoTabBody( $siteSettings, $logo_error_msg, $favicon_error_msg )
+			)
+		);
+
+		$text .= '<ul id="preftoc" role="tablist">' . "\n";
+		foreach ( $allTabInfo as $i => $tabInfo ) {
+			$tabID = $tabInfo['id'];
+
+			$linkHTML = Html::element( 'a', array(
+				'id' => "preftab-$tabID",
+				'role' => 'tab',
+				'href' => "#mw-prefsection-$tabID",
+				'aria-controls' => "mw-prefsection-$tabID",
+				'aria-selected' => ( $i == 0 ) ? 'true' : 'false',
+				'tabindex' => ( $i == 0 ) ? 0 : -1
+			), $tabInfo['title'] );
+			$liAttrs = array( 'role' => 'presentation' );
+			if ( $i == 0 ) {
+				$liAttrs['class'] = 'selected';
+			}
+			$text .= Html::rawElement( 'li', $liAttrs, $linkHTML );
+		}
+
 		$text .=<<<END
+	</ul>
 	<form enctype="multipart/form-data" action="" method="post" class="visualClear" id="mw-prefs-form">
 	<div id="preferences">
 
 END;
 		// Print the tabs!
-		$text .= $this->printMainTab( $siteSettings );
-		$text .= $this->printPrivacyTab($siteSettings );
-		$text .= $this->printSkinTab( $siteSettings );
-		$text .= $this->printLogoTab( $siteSettings, $logo_error_msg, $favicon_error_msg );
+		foreach ( $allTabInfo as $i => $tabInfo ) {
+			$text .= $this->printTab( $tabInfo );
+		}
 		Hooks::run( 'SiteSettingsTabs', array( &$text, $siteSettings ) );
 		$text .=<<<END
 	</div>
