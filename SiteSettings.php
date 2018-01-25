@@ -10,7 +10,7 @@ if ( !defined( 'MEDIAWIKI' ) ) die();
 $wgSiteSettingsScriptPath = $wgScriptPath . '/extensions/SiteSettings';
 ##
 
-define( 'SITE_SETTINGS_VERSION', '0.6' );
+define( 'SITE_SETTINGS_VERSION', '0.7-alpha' );
 
 /**********************************************/
 /***** credits (see "Special:Version")    *****/
@@ -56,10 +56,3 @@ $wgResourceModules += array(
 		),
 	),
 );
-
-###
-# Global variables
-##
-// Should be set to true before the DB table has been created, so that
-// update.php (or something similar) can be called.
-$wgSiteSettingsSetupMode = false;

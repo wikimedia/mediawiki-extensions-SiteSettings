@@ -11,6 +11,10 @@ class SiteSettings {
 	static function newFromDatabase() {
 		$db = SSUtils::getDBForWriting();
 
+		if ( !$db->tableExists( 'site_settings' ) ) {
+			return null;
+		}
+
 		$conds = array();
 		Hooks::run( 'SiteSettingsNewFromDBBegin', array (&$conds ) );
 		$row = $db->selectRow( 'site_settings', self::selectClause(), $conds );

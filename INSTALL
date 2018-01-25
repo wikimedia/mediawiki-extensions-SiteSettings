@@ -1,4 +1,4 @@
-[[Site Settings 0.6]]
+[[Site Settings 0.7-alpha]]
 
 Contents:
 * Disclaimer
@@ -24,13 +24,9 @@ The extension requires an install of MediaWiki 1.19 or greater.
     "[wikipath]/extensions/".
 (2) Insert the following line into the file "[wikipath]/LocalSettings.php":
       include_once( 'extensions/SiteSetting/SiteSettings.php' );
-(3) Add the following line below it, also in LocalSettings.php:
-      $wgSiteSettingsSetupMode = true;
-(4) Call a database update, such as by calling the following script, within
+(3) Call a database update, such as by calling the following script, within
     MediaWiki's /maintenance directory:
       php update.php
-(5) Once the "sitesettings" database table has been created, remove the
-    $wgSiteSettingsSetupMode line from LocalSettings.php.
 
 == Contact ==
 
