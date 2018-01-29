@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ganesh Paudel"
+			"Ganesh Paudel",
+			"Krish Dulal"
 		]
 	},
 	"sitesettings-desc": "विकी इन्टरफेस द्वारा सेटिङ परिवर्तन गर्न दिन्छ",
@@ -29,7 +30,7 @@
 	"sitesettings-closedediting": "बन्द भयो",
 	"sitesettings-closededitingdesc": "दर्ता गरिएका प्रयोगकर्ताले मात्र सम्पादन गर्न सक्छन्",
 	"sitesettings-updated": "साइट सेटिङ अद्यावधिक गरिए",
-	"sitesettings-userskinsreset": "यो विकिका सबै प्रयोगकर्ताहरूका लागि स्किन \"$1\" मा परिवर्तन गरियो",
+	"sitesettings-userskinsreset": "यो विकीका सबै प्रयोगकर्ताहरूका लागि स्किन \"$1\" मा परिवर्तन गरियो",
 	"sitesettings-sitelogo": "लोगो",
 	"sitesettings-nologo": "वर्तमान लोगो छैन",
 	"sitesettings-uploadlogo": "लोगो उद्भरण गर्नुहोस",
