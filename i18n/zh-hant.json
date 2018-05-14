@@ -3,7 +3,8 @@
 		"authors": [
 			"Liuxinyu970226",
 			"Cwlin0416",
-			"Kly"
+			"Kly",
+			"LNDDYL"
 		]
 	},
 	"sitesettings-desc": "允許經由 wiki 介面來更動設定",
@@ -49,7 +50,7 @@
 	"sitesettings-uploadlogo": "上傳標誌：",
 	"sitesettings-currentlogo": "目前標誌：",
 	"sitesettings-removelogo": "移除標誌",
-	"sitesettings-changelogo": "更改標誌：",
+	"sitesettings-changelogo": "變更標誌：",
 	"sitesettings-logouploaded": "標誌已上傳。",
 	"sitesettings-logoremoved": "標誌已移除。",
 	"sitesettings-faviconheader": "網站圖示檔案",
@@ -57,7 +58,7 @@
 	"sitesettings-uploadfavicon": "更新網站圖示（應使用名為 <code>favicon.ico</code> 的檔案）：",
 	"sitesettings-currentfavicon": "目前網站圖示：",
 	"sitesettings-removefavicon": "移除網站圖示",
-	"sitesettings-changefavicon": "更改網站圖示：",
+	"sitesettings-changefavicon": "變更網站圖示：",
 	"sitesettings-faviconuploaded": "網站圖示已上傳。",
 	"sitesettings-faviconremoved": "網站圖示已移除。"
 }
