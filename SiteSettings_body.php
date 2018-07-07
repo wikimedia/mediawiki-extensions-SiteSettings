@@ -217,7 +217,7 @@ class SiteSettings {
 
 		// These should always be the same, according to Setup.php.
 		$wgLanguageCode = $wgContLanguageCode = $this->language_code;
-		$wgContLang->setCode( $wgContLanguageCode );
+		$wgContLang = Language::factory( $wgContLanguageCode );
 
 		$wgLocalTZoffset = $this->hours_timezone_offset * 60;
 		$wgAmericanDates = $this->use_american_dates;
