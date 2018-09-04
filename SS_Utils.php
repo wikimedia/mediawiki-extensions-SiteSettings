@@ -37,18 +37,16 @@ class SSUtils {
 	}
 
 	public static function getDBForReading() {
-		$db = wfGetDB( DB_SLAVE );
-		Hooks::run( 'SiteSettingsGetDB', array( &$db ) );
 		global $wgSiteSettingsDB;
-		$db->selectDB( $wgSiteSettingsDB );
+		$db = wfGetDB( DB_SLAVE, [], $wgSiteSettingsDB );
+		Hooks::run( 'SiteSettingsGetDB', array( &$db ) );
 		return $db;
 	}
 
 	public static function getDBForWriting() {
-		$db = wfGetDB( DB_MASTER );
-		Hooks::run( 'SiteSettingsGetDB', array( &$db ) );
 		global $wgSiteSettingsDB;
-		$db->selectDB( $wgSiteSettingsDB );
+		$db = wfGetDB( DB_MASTER, [], $wgSiteSettingsDB );
+		Hooks::run( 'SiteSettingsGetDB', array( &$db ) );
 		return $db;
 	}
 
