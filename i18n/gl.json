@@ -13,7 +13,7 @@
 	"sitesettings-timezone": "Desfase de horas con respecto a GMT:",
 	"sitesettings-current-gmt": "(a hora GMT actual é $1 ou $2)",
 	"sitesettings-americandates": "Datas ó estilo EE. UU.",
-	"sitesettings-showpageviews": "Mostrar o número de visualizacións na parte inferior de cada páxina",
+	"sitesettings-showpageviews": "Amosar o número de visualizacións na parte inferior de cada páxina",
 	"sitesettings-usesubpages": "Usar <a href=\"https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Subpages\">subpáxinas</a>",
 	"sitesettings-allowexternalimages": "Permitir imaxes externas",
 	"sitesettings-allowlowercasepagenames": "Permitir nomes de páxinas con minúscula inicial",
