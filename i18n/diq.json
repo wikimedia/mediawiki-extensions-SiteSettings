@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kumkumuk"
+			"Kumkumuk",
+			"Mirzali"
 		]
 	},
-	"sitesettings-maintab": "Ser"
+	"sitesettings-maintab": "Ser",
+	"sitesettings-closedreg": "Kerd kip",
+	"sitesettings-closedediting": "Kerd kip"
 }
