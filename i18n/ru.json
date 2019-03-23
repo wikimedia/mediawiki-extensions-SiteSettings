@@ -3,14 +3,15 @@
 		"authors": [
 			"Meshkov.a",
 			"Okras",
-			"Macofe"
+			"Macofe",
+			"Diralik"
 		]
 	},
 	"sitesettings-desc": "Позволяет изменять настройки через вики-интерфейс",
 	"sitesettings": "Настройки сайта",
 	"sitesettings-maintab": "Главная",
 	"sitesettings-sitename": "Название сайта:",
-	"sitesettings-sitenamespace": "Сайт специфическое пространство имен:",
+	"sitesettings-sitenamespace": "Специфическое для сайта пространство имён:",
 	"sitesettings-timezone": "Смещение часов от GMT:",
 	"sitesettings-current-gmt": "(текущее время по GMT -  $1  или  $2 )",
 	"sitesettings-americandates": "Использовать американский стиль даты",
@@ -51,7 +52,7 @@
 	"sitesettings-removelogo": "Удалить логотип",
 	"sitesettings-changelogo": "Изменить логотип:",
 	"sitesettings-logouploaded": "Логотип был загружен.",
-	"sitesettings-logoremoved": "Логотип был удален.",
+	"sitesettings-logoremoved": "Логотип был удалён.",
 	"sitesettings-faviconheader": "Файл иконки сайта (Favicon)",
 	"sitesettings-nofavicon": "Нет текущей иконки сайта (favicon).",
 	"sitesettings-uploadfavicon": "Загрузить иконки сайта favicon (он должен называться <код>favicon.ico</code>):",
