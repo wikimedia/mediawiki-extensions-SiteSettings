@@ -307,6 +307,72 @@ END;
 		return $text;
 	}
 
+	/**
+	 * Provides output to the user for a result of UploadBase::verifyUpload().
+	 * Based heavily on SpecialUpload::processVerificationError().
+	 *
+	 * @param array $details Result of UploadBase::verifyUpload
+	 * @throws MWException
+	 */
+	function displayVerificationError( $details ) {
+		switch ( $details['status'] ) {
+			/** Statuses that only require name changing **/
+			case UploadBase::MIN_LENGTH_PARTNAME:
+				return $this->msg( 'minlength1' )->escaped();
+			case UploadBase::ILLEGAL_FILENAME:
+				return $this->msg( 'illegalfilename', $details['filtered'] )->parse();
+			case UploadBase::FILENAME_TOO_LONG:
+				return $this->msg( 'filename-toolong' )->escaped();
+			case UploadBase::FILETYPE_MISSING:
+				return $this->msg( 'filetype-missing' )->parse();
+			case UploadBase::WINDOWS_NONASCII_FILENAME:
+				return $this->msg( 'windows-nonascii-filename' )->parse();
+
+			/** Statuses that require reuploading **/
+			case UploadBase::EMPTY_FILE:
+				return $this->msg( 'emptyfile' )->escaped();
+			case UploadBase::FILE_TOO_LARGE:
+				return $this->msg( 'largefileserver' )->escaped();
+			case UploadBase::FILETYPE_BADTYPE:
+				$msg = $this->msg( 'filetype-banned-type' );
+				if ( isset( $details['blacklistedExt'] ) ) {
+					$msg->params( $this->getLanguage()->commaList( $details['blacklistedExt'] ) );
+				} else {
+					$msg->params( $details['finalExt'] );
+				}
+				$extensions = array_unique( $this->getConfig()->get( 'FileExtensions' ) );
+				$msg->params( $this->getLanguage()->commaList( $extensions ),
+					count( $extensions ) );
+
+				// Add PLURAL support for the first parameter. This results
+				// in a bit unlogical parameter sequence, but does not break
+				// old translations
+				if ( isset( $details['blacklistedExt'] ) ) {
+					$msg->params( count( $details['blacklistedExt'] ) );
+				} else {
+					$msg->params( 1 );
+				}
+
+				return $msg->parse();
+			case UploadBase::VERIFICATION_ERROR:
+				unset( $details['status'] );
+				$code = array_shift( $details['details'] );
+				return $this->msg( $code, $details['details'] )->parse();
+			case UploadBase::HOOK_ABORTED:
+				if ( is_array( $details['error'] ) ) { # allow hooks to return error details in an array
+					$args = $details['error'];
+					$error = array_shift( $args );
+				} else {
+					$error = $details['error'];
+					$args = null;
+				}
+
+				return $this->msg( $error, $args )->parse();
+			default:
+				return "Upload error: unknown value `{$details['status']}`";
+		}
+	}
+
 	function doSpecialSiteSettings() {
 		$out = $this->getOutput();
 		$request = $this->getRequest();
@@ -361,9 +427,16 @@ END;
 			}
 			$text .= '<div class="successbox">' . wfMessage( 'sitesettings-userskinsreset', $siteSettings->default_skin )->text() . "</div>\n";
 		} elseif ( $request->getCheck( 'upload_logo' ) ) {
-			if ( isset( $_FILES['logo_file']['name']) && $_FILES['logo_file']['name'] != '' ) {
-				$logo_error_msg = $siteSettings->setLogo( $_FILES['logo_file']['name'], $_FILES['logo_file']['tmp_name'] );
+			$webRequestUpload = $request->getUpload( 'logo_file' );
+			$filename = $webRequestUpload->getName();
+			$uploader = new UploadFromFile();
+			$uploader->initialize( $filename, $webRequestUpload );
+			$details = $uploader->verifyUpload();
+			if ( $details['status'] == UploadBase::OK ) {
+				$logo_error_msg = $siteSettings->setLogo( $filename, $webRequestUpload->getTempName() );
 				$text .= '<div class="successbox">' . wfMessage( 'sitesettings-logouploaded' )->text() . "</div>\n";
+			} else {
+				$logo_error_msg = $this->displayVerificationError( $details );
 			}
 			$siteSettings = SiteSettings::newFromDatabase();
 		} elseif ( $request->getCheck( 'remove_logo' ) ) {
@@ -371,9 +444,16 @@ END;
 			$siteSettings = SiteSettings::newFromDatabase();
 			$text .= '<div class="successbox">' . wfMessage( 'sitesettings-logoremoved' )->text() . "</div>\n";
 		} elseif ( $request->getCheck( 'upload_favicon' ) ) {
-			if ( isset( $_FILES['favicon_file']['name']) && $_FILES['favicon_file']['name'] != '') {
-				$favicon_error_msg = $siteSettings->setFavicon( $_FILES['favicon_file']['name'], $_FILES['favicon_file']['tmp_name'] );
+			$webRequestUpload = $request->getUpload( 'favicon_file' );
+			$filename = $webRequestUpload->getName();
+			$uploader = new UploadFromFile();
+			$uploader->initialize( $filename, $webRequestUpload );
+			$details = $uploader->verifyUpload();
+			if ( $details['status'] == UploadBase::OK ) {
+				$favicon_error_msg = $siteSettings->setFavicon( $filename, $webRequestUpload->getTempName() );
 				$text .= '<div class="successbox">' . wfMessage( 'sitesettings-faviconuploaded' )->text() . "</div>\n";
+			} else {
+				$favicon_error_msg = $this->displayVerificationError( $details );
 			}
 			$siteSettings = SiteSettings::newFromDatabase();
 		} elseif ( $request->getCheck( 'remove_favicon' ) ) {
