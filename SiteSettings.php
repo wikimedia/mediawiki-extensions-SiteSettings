@@ -10,7 +10,7 @@ if ( !defined( 'MEDIAWIKI' ) ) die();
 $wgSiteSettingsScriptPath = $wgScriptPath . '/extensions/SiteSettings';
 ##
 
-define( 'SITE_SETTINGS_VERSION', '0.7-alpha' );
+define( 'SITE_SETTINGS_VERSION', '0.7' );
 
 /**********************************************/
 /***** credits (see "Special:Version")    *****/
