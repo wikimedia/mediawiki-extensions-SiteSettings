@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Reza1615"
+			"Reza1615",
+			"FarsiNevis"
 		]
 	},
 	"sitesettings-maintab": "اصلی",
-	"sitesettings-update": "به روز رسانی",
+	"sitesettings-update": "روزآمدسازی",
 	"sitesettings-privacytab": "حریم خصوصی",
 	"sitesettings-public": "عمومی",
 	"sitesettings-private": "خصوصی",
