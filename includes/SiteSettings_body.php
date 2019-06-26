@@ -21,10 +21,7 @@ class SiteSettings {
 		$hookContainer = MediaWikiServices::getInstance()->getHookContainer();
 		$hookContainer->run( 'SiteSettingsNewFromDBBegin', array (&$conds ) );
 		$row = $db->selectRow( 'site_settings', self::selectClause(), $conds );
-		if ( !empty( $row ) ) {
-			// Back to real DB, if the DB changed.
-			global $wgDBname;
-			$db->selectDB( $wgDBname );
+		if ( $row ) {
 			$ss = new SiteSettings();
 			$ss->createFromRow( $row );
 			return $ss;
@@ -59,10 +56,7 @@ class SiteSettings {
 		$conds = array();
 		MediaWikiServices::getInstance()->getHookContainer()->run( 'SiteSettingsNewFromDBBegin', array (&$conds ) );
 		$row = $db->selectRow( 'site_settings', self::selectClause(), $conds );
-		if ( !empty( $row ) ) {
-			// Back to real DB, if the DB changed.
-			global $wgDBname;
-			$db->selectDB( $wgDBname );
+		if ( $row ) {
 			$this->createFromRow( $row );
 		}
 	}
