@@ -52,12 +52,12 @@
 	"sitesettings-changelogo": "Cambiar logo:",
 	"sitesettings-logouploaded": "Se actualizó el logo.",
 	"sitesettings-logoremoved": "Se quitó el logo.",
-	"sitesettings-faviconheader": "Archivo de favicon",
+	"sitesettings-faviconheader": "Archivo de favicono",
 	"sitesettings-nofavicon": "No hay ningún favicono actual.",
-	"sitesettings-uploadfavicon": "Subir favicon (debería llamarse <code>favicon.ico</code>):",
+	"sitesettings-uploadfavicon": "Cargar favicono (su nombre debe ser <code>favicon.ico</code>):",
 	"sitesettings-currentfavicon": "Favicono actual:",
-	"sitesettings-removefavicon": "Quitar ''favicon''",
+	"sitesettings-removefavicon": "Quitar favicono",
 	"sitesettings-changefavicon": "Cambiar favicono:",
-	"sitesettings-faviconuploaded": "Se subió el favicono.",
-	"sitesettings-faviconremoved": "Se quitó el ''favicon''."
+	"sitesettings-faviconuploaded": "Se cargó el favicono.",
+	"sitesettings-faviconremoved": "Se quitó el favicono."
 }
