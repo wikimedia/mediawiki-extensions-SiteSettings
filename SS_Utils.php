@@ -30,7 +30,7 @@ class SSUtils {
 
 	static function setUser( $user, $s ) {
 		if ( self::currentSiteIsMainSite() ) return true;
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		// Just overwrite whatever was there before.
 		$s = $dbr->selectRow( 'user', '*', array( 'user_id' => $user->mId ), __METHOD__ );
 		return true;
@@ -38,7 +38,7 @@ class SSUtils {
 
 	public static function getDBForReading() {
 		global $wgSiteSettingsDB;
-		$db = wfGetDB( DB_SLAVE, [], $wgSiteSettingsDB );
+		$db = wfGetDB( DB_REPLICA, [], $wgSiteSettingsDB );
 		Hooks::run( 'SiteSettingsGetDB', array( &$db ) );
 		return $db;
 	}
