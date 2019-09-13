@@ -4,7 +4,8 @@
 			"Gomoko",
 			"Macofe",
 			"Wladek92",
-			"Urhixidur"
+			"Urhixidur",
+			"Thibaut120094"
 		]
 	},
 	"sitesettings-desc": "Autorise la modification des paramètres via une interface wiki",
@@ -44,7 +45,7 @@
 	"sitesettings-veryclosededitingdesc": "Seuls les administrateurs peuvent modifier",
 	"sitesettings-updated": "Les paramètres du site ont été mis à jour.",
 	"sitesettings-appearanceupdated": "Les paramètres d’apparence du site ont été mis à jour.",
-	"sitesettings-userskinsreset": "L’habillage pour tous les utilisateurs existants de ce wiki a été modifié en « $1 ».",
+	"sitesettings-userskinsreset": "L’habillage pour tous les utilisateurs existants de ce wiki a été modifié en « $1 ».",
 	"sitesettings-sitelogo": "Logo",
 	"sitesettings-nologo": "Il n’y a pas de logo actuel.",
 	"sitesettings-uploadlogo": "Téléverser le logo :",
