@@ -56,3 +56,8 @@ $wgResourceModules += array(
 		),
 	),
 );
+
+###
+# Global variables
+##
+$wgSiteSettingsDB = $wgDBname;
