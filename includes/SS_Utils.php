@@ -127,7 +127,7 @@ class SSUtils {
 
 		$dir = dirname( __FILE__ );
 		//$updater->addExtensionUpdate( array( 'addTable', 'site_settings', "$dir/SiteSettings.sql", true ) );
-		$updater->addExtensionTable( 'site_settings', "$dir/SiteSettings.sql", true );
+		$updater->addExtensionTable( 'site_settings', "$dir/sql/SiteSettings.sql", true );
 		Hooks::run( 'SiteSettingsCreateTableBefore', array( $updater ) );
 		return true;
 	}

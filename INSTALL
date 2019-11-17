@@ -1,4 +1,4 @@
-[[Site Settings 0.7]]
+[[Site Settings 0.8-alpha]]
 
 Contents:
 * Disclaimer
@@ -15,7 +15,7 @@ For a proper legal disclaimer, see the file "COPYING".
 
 == Requirements ==
 
-The extension requires an install of MediaWiki 1.19 or greater.
+The extension requires an install of MediaWiki 1.25 or greater.
 
 == Installation ==
 
