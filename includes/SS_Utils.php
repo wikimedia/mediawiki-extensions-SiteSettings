@@ -57,13 +57,12 @@ class SSUtils {
 		$db->update( 'site_settings', $valuesToUpdate, $conds );
 	}
 
-	static function addTopSiteSettingsLink( &$personal_urls, &$title ) {
-		global $wgUser;
-
+	static function addTopSiteSettingsLink( &$personal_urls, &$title, $skinTemplate ) {
 		$site_settings_vals = null;
 		$cur_url = $title->getLocalURL();
+		$user = $skinTemplate->getUser();
 
-		if ( $wgUser->isAllowed( 'sitesettings' ) ) {
+		if ( $user->isAllowed( 'sitesettings' ) ) {
 			$ss = SpecialPage::getTitleFor( 'SiteSettings' );
 			$href = $ss->getLocalURL();
 			$site_settings_vals = array(
