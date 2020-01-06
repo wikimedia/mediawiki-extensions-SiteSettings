@@ -60,5 +60,7 @@
 	"sitesettings-removefavicon": "Used as text of a button on [[Special:SiteSettings]]",
 	"sitesettings-changefavicon": "Used as label on [[Special:SiteSettings]]",
 	"sitesettings-faviconuploaded": "Used as info message on [[Special:SiteSettings]]",
-	"sitesettings-faviconremoved": "Used as info message on [[Special:SiteSettings]]"
+	"sitesettings-faviconremoved": "Used as info message on [[Special:SiteSettings]]",
+	"right-sitesettings": "{{doc-right|sitesettings}}",
+	"action-sitesettings": "{{doc-action|sitesettings}}"
 }
