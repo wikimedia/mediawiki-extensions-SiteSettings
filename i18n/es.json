@@ -59,5 +59,7 @@
 	"sitesettings-removefavicon": "Quitar favicono",
 	"sitesettings-changefavicon": "Cambiar favicono:",
 	"sitesettings-faviconuploaded": "Se cargó el favicono.",
-	"sitesettings-faviconremoved": "Se quitó el favicono."
+	"sitesettings-faviconremoved": "Se quitó el favicono.",
+	"right-sitesettings": "Modificar la [[Special:SiteSettings|configuración del wiki]] en el wiki mismo",
+	"action-sitesettings": "modificar la [[Special:SiteSettings|configuración del wiki]] en el wiki mismo"
 }

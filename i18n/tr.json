@@ -58,5 +58,7 @@
 	"sitesettings-removefavicon": "Favicon'u kaldır",
 	"sitesettings-changefavicon": "Favicon'u değiştir:",
 	"sitesettings-faviconuploaded": "Favicon yüklendi.",
-	"sitesettings-faviconremoved": "Favicon kaldırıldı."
+	"sitesettings-faviconremoved": "Favicon kaldırıldı.",
+	"right-sitesettings": "Vikinin kendisinde [[Special:SiteSettings|viki ayarları]] üzerinde değişiklik yapın",
+	"action-sitesettings": "vikinin kendisinde [[Special:SiteSettings|viki ayarları]] üzerinde değişiklik yapın"
 }

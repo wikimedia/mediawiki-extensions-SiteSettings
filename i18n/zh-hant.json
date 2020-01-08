@@ -60,5 +60,7 @@
 	"sitesettings-removefavicon": "移除網站圖示",
 	"sitesettings-changefavicon": "變更網站圖示：",
 	"sitesettings-faviconuploaded": "網站圖示已上傳。",
-	"sitesettings-faviconremoved": "網站圖示已移除。"
+	"sitesettings-faviconremoved": "網站圖示已移除。",
+	"right-sitesettings": "在 wiki 本身變動 [[Special:SiteSettings|wiki 設定]]",
+	"action-sitesettings": "在 wiki 本身變動 [[Special:SiteSettings|wiki 設定]]"
 }

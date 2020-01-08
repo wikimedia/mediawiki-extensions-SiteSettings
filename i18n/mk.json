@@ -58,5 +58,7 @@
 	"sitesettings-removefavicon": "Отстрани иконка",
 	"sitesettings-changefavicon": "Смени иконка:",
 	"sitesettings-faviconuploaded": "Иконката е подигната.",
-	"sitesettings-faviconremoved": "Иконката е отстранета."
+	"sitesettings-faviconremoved": "Иконката е отстранета.",
+	"right-sitesettings": "Менување на [[Special:SiteSettings|поставките на самото вики]]",
+	"action-sitesettings": "менување на [[Special:SiteSettings|поставките на самото вики]]"
 }
