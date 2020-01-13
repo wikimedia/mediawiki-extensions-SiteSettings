@@ -58,5 +58,7 @@
 	"sitesettings-removefavicon": "إزالة أيقونة المفضلة",
 	"sitesettings-changefavicon": "تغيير أيقونة المفضلة:",
 	"sitesettings-faviconuploaded": "تم رفع أيقونة المفضلة.",
-	"sitesettings-faviconremoved": "تمت إزالة أيقونة المفضلة."
+	"sitesettings-faviconremoved": "تمت إزالة أيقونة المفضلة.",
+	"right-sitesettings": "تعديل [[Special:SiteSettings|إعدادات الويكي]] على الويكي نفسه",
+	"action-sitesettings": "تعديل [[Special:SiteSettings|إعدادات الويكي]] على الويكي نفسه"
 }

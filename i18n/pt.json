@@ -4,7 +4,8 @@
 			"Vitorvicentevalente",
 			"Macofe",
 			"Hamilton Abreu",
-			"Athena in Wonderland"
+			"Athena in Wonderland",
+			"Mansil"
 		]
 	},
 	"sitesettings-desc": "Permite modificar as configurações através de uma interface wiki",
@@ -61,6 +62,6 @@
 	"sitesettings-changefavicon": "Alterar favicon:",
 	"sitesettings-faviconuploaded": "O favicon foi carregado.",
 	"sitesettings-faviconremoved": "O favicon foi removido.",
-	"right-sitesettings": "Modificar as [[Special:SiteSettings|configurações da wiki]] na própria wiki",
-	"action-sitesettings": "modificar as [[Special:SiteSettings|configurações da wiki]] na própria wiki"
+	"right-sitesettings": "Modificar as [[Special:SiteSettings|definições da wiki]] na própria wiki",
+	"action-sitesettings": "modificar as [[Special:SiteSettings|definições da wiki]] na própria wiki"
 }
