@@ -57,5 +57,7 @@
 	"sitesettings-removefavicon": "Fjern favicon",
 	"sitesettings-changefavicon": "Endre favicon:",
 	"sitesettings-faviconuploaded": "Favicon ble lastet opp.",
-	"sitesettings-faviconremoved": "Favicon ble fjernet."
+	"sitesettings-faviconremoved": "Favicon ble fjernet.",
+	"right-sitesettings": "Endre [[Special:SiteSettings|wikiens innstillinger]] på selve wikien",
+	"action-sitesettings": "endre [[Special:SiteSettings|wikiens innstillinger]] på selve wikien"
 }
