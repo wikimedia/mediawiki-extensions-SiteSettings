@@ -4,10 +4,16 @@
 			"Joanmp17"
 		]
 	},
+	"sitesettings": "ገጽ ኣቀማምጣታት",
 	"sitesettings-maintab": "መበገሲ",
 	"sitesettings-update": "ኣሐዲስ",
 	"sitesettings-privacytab": "ስትረት",
+	"sitesettings-public": "ህዝባዊ",
+	"sitesettings-private": "ብሕታዊ",
+	"sitesettings-registrationpolicy": "ምዝጋበ",
 	"sitesettings-openreg": "ከፈት",
+	"sitesettings-closedreg": "ዕጽዉ",
 	"sitesettings-openediting": "ከፈት",
+	"sitesettings-closedediting": "ዕጽዉ",
 	"sitesettings-sitelogo": "ኣርማ"
 }
