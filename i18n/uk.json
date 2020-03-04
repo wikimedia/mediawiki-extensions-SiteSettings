@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Ата",
-			"Macofe"
+			"Macofe",
+			"Piramidion"
 		]
 	},
 	"sitesettings-desc": "Дозволяє змінювати налаштування через віі-інтерфейс",
@@ -58,5 +59,7 @@
 	"sitesettings-removefavicon": "Вилучити favicon",
 	"sitesettings-changefavicon": "Змінити favicon:",
 	"sitesettings-faviconuploaded": "Favicon було завантажено.",
-	"sitesettings-faviconremoved": "Favicon було видалено."
+	"sitesettings-faviconremoved": "Favicon було видалено.",
+	"right-sitesettings": "зміна [[Special:SiteSettings|налаштувань самої вікі]]",
+	"action-sitesettings": "зміну [[Special:SiteSettings|налаштувань самої вікі]]"
 }
