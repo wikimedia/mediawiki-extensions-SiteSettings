@@ -203,7 +203,7 @@ class SiteSettings {
 
 	function load() {
 		global $wgSitename, $wgLocalInterwiki, $wgMetaNamespace;
-		global $wgContLanguageCode, $wgContLang, $wgLanguageCode;
+		global $wgContLang, $wgLanguageCode;
 		global $wgLocalTZoffset, $wgAmericanDates;
 		global $wgDisableCounters, $wgAllowExternalImages, $wgCapitalLinks;
 		global $wgRightsText, $wgRightsUrl;
@@ -215,9 +215,8 @@ class SiteSettings {
 		$wgSitename = $this->name;
 		$wgLocalInterwiki = $wgSitename;
 
-		// These should always be the same, according to Setup.php.
-		$wgLanguageCode = $wgContLanguageCode = $this->language_code;
-		$wgContLang = Language::factory( $wgContLanguageCode );
+		$wgLanguageCode = $this->language_code;
+		$wgContLang = Language::factory( $wgLanguageCode );
 
 		$wgLocalTZoffset = $this->hours_timezone_offset * 60;
 		$wgAmericanDates = $this->use_american_dates;
