@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226",
-			"Mywood",
 			"Impersonator 1",
-			"Macofe"
+			"Liuxinyu970226",
+			"Macofe",
+			"Mywood"
 		]
 	},
 	"sitesettings-desc": "允许通过wiki界面修改设置",

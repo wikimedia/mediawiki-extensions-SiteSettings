@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vitorvicentevalente",
-			"Macofe",
-			"Hamilton Abreu",
 			"Athena in Wonderland",
-			"Mansil"
+			"Hamilton Abreu",
+			"Macofe",
+			"Mansil",
+			"Vitorvicentevalente"
 		]
 	},
 	"sitesettings-desc": "Permite modificar as configurações através de uma interface wiki",

@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Josve05a",
 			"Jopparn",
-			"WikiPhoenix",
+			"Josve05a",
 			"Lokal Profil",
-			"Macofe"
+			"Macofe",
+			"WikiPhoenix"
 		]
 	},
 	"sitesettings-desc": "Gör det möjligt att ändra inställningar genom ett wiki-gränssnitt",
