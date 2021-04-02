@@ -6,6 +6,8 @@
  * @author Yaron Koren
  */
 
+use MediaWiki\MediaWikiServices;
+
 class SpecialSiteSettings extends SpecialPage {
 
 	/**
@@ -420,10 +422,21 @@ END;
 				array(),
 				__METHOD__
 			);
-			while( $id = $dbr->fetchObject( $result ) ) {
-				$user = User::newFromId( $id->user_id );
-				$user->setOption( 'skin', $siteSettings->default_skin );
-				$user->saveSettings();
+			$services = MediaWikiServices::getInstance();
+			if ( method_exists( $services, 'getUserOptionsManager' ) ) {
+				// MW 1.35 +
+				$userOptionsManager = $services->getUserOptionsManager();
+				while( $id = $dbr->fetchObject( $result ) ) {
+					$user = User::newFromId( $id->user_id );
+					$userOptionsManager->setOption( $user, 'skin', $siteSettings->default_skin );
+					$userOptionsManager->saveOptions( $user );
+				}
+			} else {
+				while( $id = $dbr->fetchObject( $result ) ) {
+					$user = User::newFromId( $id->user_id );
+					$user->setOption( 'skin', $siteSettings->default_skin );
+					$user->saveSettings();
+				}
 			}
 			$text .= '<div class="successbox">' . wfMessage( 'sitesettings-userskinsreset', $siteSettings->default_skin )->text() . "</div>\n";
 		} elseif ( $request->getCheck( 'upload_logo' ) ) {
