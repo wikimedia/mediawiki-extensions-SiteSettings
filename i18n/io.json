@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"JSantos",
 			"Joao Xavier"
 		]
 	},
-	"sitesettings-editingpolicy": "Redaktanta"
+	"sitesettings-closedreg": "Klozita",
+	"sitesettings-editingpolicy": "Redaktanta",
+	"sitesettings-closedediting": "Klozita"
 }
