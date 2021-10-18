@@ -4,14 +4,15 @@
 			"Impersonator 1",
 			"Liuxinyu970226",
 			"Macofe",
-			"Mywood"
+			"Mywood",
+			"Xiplus"
 		]
 	},
 	"sitesettings-desc": "允许通过wiki界面修改设置",
 	"sitesettings": "网站设置",
 	"sitesettings-maintab": "主",
 	"sitesettings-sitename": "网站名称：",
-	"sitesettings-sitenamespace": "网站特定名字空间名称：",
+	"sitesettings-sitenamespace": "网站特定命名空间名称：",
 	"sitesettings-timezone": "与GMT时间的抵消量：",
 	"sitesettings-current-gmt": "（当前GMT时间是$1或$2）",
 	"sitesettings-americandates": "使用美式日期",
