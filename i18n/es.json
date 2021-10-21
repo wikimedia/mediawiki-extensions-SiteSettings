@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Fitoschido",
+			"Jakeukalane",
 			"Macofe",
 			"The Anonymouse"
 		]
@@ -43,7 +44,7 @@
 	"sitesettings-veryclosededitingdesc": "Solo los administradores pueden editar",
 	"sitesettings-updated": "Se actualizó la configuración del sitio.",
 	"sitesettings-appearanceupdated": "Se actualizó la configuración de apariencia del sitio.",
-	"sitesettings-userskinsreset": "La apariencia para todos los usuarios existentes de este wiki se cambió a «$1».",
+	"sitesettings-userskinsreset": "La apariencia para todos los usuarios existentes de esta wiki se cambió a «$1».",
 	"sitesettings-sitelogo": "Logo",
 	"sitesettings-nologo": "No hay ningún logo actual.",
 	"sitesettings-uploadlogo": "Subir logo:",
@@ -60,6 +61,6 @@
 	"sitesettings-changefavicon": "Cambiar favicono:",
 	"sitesettings-faviconuploaded": "Se cargó el favicono.",
 	"sitesettings-faviconremoved": "Se quitó el favicono.",
-	"right-sitesettings": "Modificar la [[Special:SiteSettings|configuración del wiki]] en el wiki mismo",
-	"action-sitesettings": "modificar la [[Special:SiteSettings|configuración del wiki]] en el wiki mismo"
+	"right-sitesettings": "Modificar la [[Special:SiteSettings|configuración de la wiki]] en la propia wiki",
+	"action-sitesettings": "modificar la [[Special:SiteSettings|configuración de la wiki]] en la propia wiki"
 }
