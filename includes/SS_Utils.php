@@ -105,7 +105,7 @@ class SSUtils {
 	static function blockFromReading( $user, &$rights ) {
 		global $wgGroupPermissions;
 		if ( $wgGroupPermissions['*']['read'] == false ) {
-			if ( $user->isBlocked() ) {
+			if ( $user->getBlock() ) {
 				foreach ( $rights as $i => $right ) {
 					if ( $right == 'read' ) {
 						unset( $rights[$i] );
