@@ -23,7 +23,7 @@ The extension requires an install of MediaWiki 1.25 or greater.
     all relevant files. Copy this directory (or extract/download it) to
     "[wikipath]/extensions/".
 (2) Insert the following line into the file "[wikipath]/LocalSettings.php":
-      include_once( 'extensions/SiteSetting/SiteSettings.php' );
+      wfLoadExtension( 'SiteSettings' );
 (3) Call a database update, such as by calling the following script, within
     MediaWiki's /maintenance directory:
       php update.php
