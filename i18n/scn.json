@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf"
+		]
+	},
+	"sitesettings": "Mpustazzioni situ",
+	"sitesettings-maintab": "Principali",
+	"sitesettings-sitename": "Nomu dû situ:",
+	"sitesettings-copyrighturl": "URL copyright:",
+	"sitesettings-closedreg": "Chiudutu",
+	"sitesettings-sitelogo": "Logo",
+	"sitesettings-faviconheader": "File favicon",
+	"sitesettings-currentfavicon": "Favicon attuali:",
+	"sitesettings-changefavicon": "Cancia favicon:"
+}
