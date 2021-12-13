@@ -4,17 +4,17 @@
 			"Joanmp17"
 		]
 	},
-	"sitesettings": "ገጽ ኣቀማምጣታት",
+	"sitesettings": "ምምዕርራያት መካን",
 	"sitesettings-maintab": "መበገሲ",
-	"sitesettings-update": "ኣሐዲስ",
+	"sitesettings-update": "ኣሓድስ",
 	"sitesettings-privacytab": "ስትረት",
 	"sitesettings-public": "ህዝባዊ",
 	"sitesettings-private": "ብሕታዊ",
 	"sitesettings-registrationpolicy": "ምዝጋበ",
-	"sitesettings-openreg": "ከፈት",
+	"sitesettings-openreg": "ክፈት",
 	"sitesettings-closedreg": "ዝተዓጽወ",
-	"sitesettings-editingpolicy": "ተዓርያ",
-	"sitesettings-openediting": "ከፈት",
+	"sitesettings-editingpolicy": "ኣርትዖት",
+	"sitesettings-openediting": "ክፈት",
 	"sitesettings-closedediting": "ዝተዓጽወ",
 	"sitesettings-sitelogo": "ኣርማ"
 }
