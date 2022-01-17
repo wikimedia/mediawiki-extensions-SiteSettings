@@ -5,6 +5,7 @@
 			"Liuxinyu970226",
 			"Macofe",
 			"Mywood",
+			"Tranve",
 			"Xiplus"
 		]
 	},
@@ -35,7 +36,7 @@
 	"sitesettings-openreg": "开放",
 	"sitesettings-openregdesc": "任何人都可以注册",
 	"sitesettings-closedreg": "关闭",
-	"sitesettings-closedregdesc": "只有管理员可以注册账户",
+	"sitesettings-closedregdesc": "只有管理员可以注册账号",
 	"sitesettings-editingpolicy": "编辑",
 	"sitesettings-openediting": "开放",
 	"sitesettings-openeditingdesc": "任何人都可以编辑",
