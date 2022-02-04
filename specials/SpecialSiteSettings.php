@@ -7,6 +7,7 @@
  */
 
 use MediaWiki\MediaWikiServices;
+use Wikimedia\Rdbms\IDatabase;
 
 class SpecialSiteSettings extends SpecialPage {
 
@@ -417,23 +418,23 @@ END;
 		} elseif ( $request->getCheck( 'reset-user-skins' ) ) {
 			// based on /maintenance/userOptions.inc
 			$siteSettings = SiteSettings::newFromDatabase();
-			$result = $dbr->select( 'user',
-				array( 'user_id' ),
-				array(),
+			$userIds = $dbr->selectFieldValues( 'user',
+				'user_id',
+				IDatabase::ALL_ROWS,
 				__METHOD__
 			);
 			$services = MediaWikiServices::getInstance();
 			if ( method_exists( $services, 'getUserOptionsManager' ) ) {
 				// MW 1.35 +
 				$userOptionsManager = $services->getUserOptionsManager();
-				while( $id = $dbr->fetchObject( $result ) ) {
-					$user = User::newFromId( $id->user_id );
+				foreach ( $userIds as $userId ) {
+					$user = User::newFromId( $userId );
 					$userOptionsManager->setOption( $user, 'skin', $siteSettings->default_skin );
 					$userOptionsManager->saveOptions( $user );
 				}
 			} else {
-				while( $id = $dbr->fetchObject( $result ) ) {
-					$user = User::newFromId( $id->user_id );
+				foreach ( $userIds as $userId ) {
+					$user = User::newFromId( $userId );
 					$user->setOption( 'skin', $siteSettings->default_skin );
 					$user->saveSettings();
 				}
