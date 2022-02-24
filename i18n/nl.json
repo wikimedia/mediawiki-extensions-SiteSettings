@@ -3,6 +3,7 @@
 		"authors": [
 			"Mainframe98",
 			"Mar(c)",
+			"Romaine",
 			"SPQRobin"
 		]
 	},
@@ -19,5 +20,12 @@
 	"sitesettings-closedediting": "Gesloten",
 	"sitesettings-closededitingdesc": "Alleen geregistreerde gebruikers kunnen bewerken",
 	"sitesettings-veryclosededitingdesc": "Alleen beheerders kunnen bewerken",
-	"sitesettings-sitelogo": "Logo"
+	"sitesettings-sitelogo": "Logo",
+	"sitesettings-uploadlogo": "Upload logo:",
+	"sitesettings-currentlogo": "Huidig logo:",
+	"sitesettings-removelogo": "Verwijder logo",
+	"sitesettings-changelogo": "Wijzig logo:",
+	"sitesettings-currentfavicon": "Huidige favicon:",
+	"sitesettings-removefavicon": "Verwijder favicon",
+	"sitesettings-changefavicon": "Wijzig favicon:"
 }
