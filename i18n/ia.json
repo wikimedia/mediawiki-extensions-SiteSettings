@@ -57,5 +57,7 @@
 	"sitesettings-removefavicon": "Remover favicon",
 	"sitesettings-changefavicon": "Cambiar favicon:",
 	"sitesettings-faviconuploaded": "Le favicon ha essite incargate.",
-	"sitesettings-faviconremoved": "Le favicon ha essite removite."
+	"sitesettings-faviconremoved": "Le favicon ha essite removite.",
+	"right-sitesettings": "Modificar le [[Special:SiteSettings|parametros del wiki]] sur le wiki mesme",
+	"action-sitesettings": "modificar le [[Special:SiteSettings|parametros del wiki]] sur le wiki mesme"
 }
