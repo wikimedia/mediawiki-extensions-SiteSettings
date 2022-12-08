@@ -59,5 +59,7 @@
 	"sitesettings-removefavicon": "הסרת סמל סימניות",
 	"sitesettings-changefavicon": "שינוי סמל סימניות:",
 	"sitesettings-faviconuploaded": "סמל הסימניות הועלה.",
-	"sitesettings-faviconremoved": "סמל הסימניות הוסר."
+	"sitesettings-faviconremoved": "סמל הסימניות הוסר.",
+	"right-sitesettings": "שינוי [[Special:SiteSettings|הגדרות הויקי]] בוויקי עצמו",
+	"action-sitesettings": "לשנות את [[Special:SiteSettings|הגדרות הוויקי]] בוויקי עצמו"
 }
