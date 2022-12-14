@@ -4,7 +4,8 @@
 			"Cwlin0416",
 			"Kly",
 			"LNDDYL",
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"捍粵者"
 		]
 	},
 	"sitesettings-desc": "允許經由 wiki 介面來更動設定",
@@ -34,7 +35,7 @@
 	"sitesettings-openreg": "開啟",
 	"sitesettings-openregdesc": "任何人皆可註冊",
 	"sitesettings-closedreg": "已關閉",
-	"sitesettings-closedregdesc": "僅可由管理員來進行使用者註冊",
+	"sitesettings-closedregdesc": "只可由管理員註冊使用者",
 	"sitesettings-editingpolicy": "編輯",
 	"sitesettings-openediting": "開啟",
 	"sitesettings-openeditingdesc": "任何人皆可編輯",
