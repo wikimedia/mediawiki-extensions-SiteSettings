@@ -30,7 +30,7 @@
 	"sitesettings-private": "非公開",
 	"sitesettings-privatedesc": "僅註冊的使用者可以閱讀該站",
 	"sitesettings-veryprivate": "僅限私人",
-	"sitesettings-veryprivatedesc": "使用者僅可檢視首頁和他們的個人頁面",
+	"sitesettings-veryprivatedesc": "使用者只可檢視首頁和個人頁面",
 	"sitesettings-registrationpolicy": "註冊",
 	"sitesettings-openreg": "開啟",
 	"sitesettings-openregdesc": "任何人皆可註冊",
