@@ -4,8 +4,13 @@
 			"Eleassar"
 		]
 	},
+	"sitesettings": "Nastavitve spletnega mesta",
+	"sitesettings-update": "Posodobi",
 	"sitesettings-privacytab": "Zasebnost",
+	"sitesettings-registrationpolicy": "Registracija",
+	"sitesettings-openreg": "Odpri",
 	"sitesettings-closedreg": "Zaprto",
 	"sitesettings-editingpolicy": "Urejanje",
+	"sitesettings-openediting": "Odpri",
 	"sitesettings-closedediting": "Zaprto"
 }
