@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 /**
  * SiteSettings class - holds the settings set within the page
  * Special:SiteSettings.
@@ -216,7 +218,12 @@ class SiteSettings {
 		$wgLocalInterwiki = $wgSitename;
 
 		$wgLanguageCode = $this->language_code;
-		$wgContLang = Language::factory( $wgLanguageCode );
+		if ( method_exists( MediaWikiServices::class, 'getLanguageFactory' ) ) {
+			// MW 1.35+
+			$wgContLang = MediaWikiServices::getInstance()->getLanguageFactory()->getLanguage( $wgLanguageCode );
+		} else {
+			$wgContLang = Language::factory( $wgLanguageCode );
+		}
 
 		$wgLocalTZoffset = $this->hours_timezone_offset * 60;
 		$wgAmericanDates = $this->use_american_dates;

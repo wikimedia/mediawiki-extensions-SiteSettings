@@ -72,7 +72,13 @@ END;
 		global $wgLanguageCode;
 
 		// Code based on dropdown menu from SpecialPreferences.php.
-		$languages = Language::fetchLanguageNames( null, 'mw' );
+		if ( method_exists( MediaWikiServices::class, 'getLanguageNameUtils' ) ) {
+			// MW 1.34+
+			$languages = MediaWikiServices::getInstance()->getLanguageNameUtils()
+				->getLanguageNames( MediaWiki\Languages\LanguageNameUtils::AUTONYMS, MediaWiki\Languages\LanguageNameUtils::DEFINED );
+		} else {
+			$languages = Language::fetchLanguageNames( null, 'mw' );
+		}
 		if ( !array_key_exists( $wgLanguageCode, $languages ) ) {
 			$languages[$siteSettings->language_code] = $siteSettings->language_code;
 		}
