@@ -3,6 +3,7 @@
 		"authors": [
 			"Artificial123",
 			"Macofe",
+			"Plaga med",
 			"ZlyiLev"
 		]
 	},
@@ -14,8 +15,8 @@
 	"sitesettings-private": "Прыватны",
 	"sitesettings-openreg": "Адкрыць",
 	"sitesettings-openeditingdesc": "Кожны можа рэдагаваць",
-	"sitesettings-uploadlogo": "Загрузіць лагатып:",
+	"sitesettings-uploadlogo": "Запампаваць лагатып:",
 	"sitesettings-currentlogo": "Цяперашні лагатып:",
-	"sitesettings-uploadfavicon": "Загрузіць іконку сайта — favicon (яе варта назваць <code>favicon.ico</code>):",
+	"sitesettings-uploadfavicon": "Запампаваць іконку сайта — favicon (яна павінна называцца <code>favicon.ico</code>):",
 	"sitesettings-currentfavicon": "Цяперашняя іконка сайта (favicon):"
 }
