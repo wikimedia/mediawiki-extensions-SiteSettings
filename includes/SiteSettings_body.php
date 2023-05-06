@@ -18,7 +18,8 @@ class SiteSettings {
 		}
 
 		$conds = array();
-		Hooks::run( 'SiteSettingsNewFromDBBegin', array (&$conds ) );
+		$hookContainer = MediaWikiServices::getInstance()->getHookContainer();
+		$hookContainer->run( 'SiteSettingsNewFromDBBegin', array (&$conds ) );
 		$row = $db->selectRow( 'site_settings', self::selectClause(), $conds );
 		if ( !empty( $row ) ) {
 			// Back to real DB, if the DB changed.
@@ -31,7 +32,7 @@ class SiteSettings {
 
 		$returnData = null;
 
-		Hooks::run( 'SiteSettingsNewFromDBNoData', array ( &$returnData ) );
+		$hookContainer->run( 'SiteSettingsNewFromDBNoData', array ( &$returnData ) );
 
 		// If there's still no data after all that, then most likely
 		// the site_settings DB table is empty - create a row for it.
@@ -56,7 +57,7 @@ class SiteSettings {
 		$db = SSUtils::getDBForWriting();
 
 		$conds = array();
-		Hooks::run( 'SiteSettingsNewFromDBBegin', array (&$conds ) );
+		MediaWikiServices::getInstance()->getHookContainer()->run( 'SiteSettingsNewFromDBBegin', array (&$conds ) );
 		$row = $db->selectRow( 'site_settings', self::selectClause(), $conds );
 		if ( !empty( $row ) ) {
 			// Back to real DB, if the DB changed.
@@ -101,7 +102,7 @@ class SiteSettings {
 			),
 		);
 
-		Hooks::run( 'SiteSettingsGetFields', array( &$allFields ) );
+		MediaWikiServices::getInstance()->getHookContainer()->run( 'SiteSettingsGetFields', array( &$allFields ) );
 
 		return $allFields;
 	}
@@ -133,7 +134,7 @@ class SiteSettings {
 
 	function getImagesSubirectoryName() {
 		$imagesSubdirectory = '';
-		Hooks::run( 'SiteSettingsGetImagesSubdirectoryName', array( $this, &$imagesSubdirectory ) );
+		MediaWikiServices::getInstance()->getHookContainer()->run( 'SiteSettingsGetImagesSubdirectoryName', array( $this, &$imagesSubdirectory ) );
 		return $imagesSubdirectory;
 	}
 
@@ -197,7 +198,7 @@ class SiteSettings {
 		$fieldsAndStartingValues['namespace'] = $wgSitename;
 		$fieldsAndStartingValues['language_code'] = $wgLanguageCode;
 
-		Hooks::run( 'SiteSettingsCreateStartingValues', array( $this, &$fieldsAndStartingValues ) );
+		MediaWikiServices::getInstance()->getHookContainer()->run( 'SiteSettingsCreateStartingValues', array( $this, &$fieldsAndStartingValues ) );
 
 		$db = SSUtils::getDBForWriting();
 		$db->insert( 'site_settings', $fieldsAndStartingValues );
@@ -211,7 +212,8 @@ class SiteSettings {
 		global $wgRightsText, $wgRightsUrl;
 		global $wgNamespacesWithSubpages;
 
-		Hooks::run( 'SiteSettingsLoadSettingsStart', array( $this ) );
+		$hookContainer = MediaWikiServices::getInstance()->getHookContainer();
+		$hookContainer->run( 'SiteSettingsLoadSettingsStart', array( $this ) );
 
 		$i = 0;
 		$wgSitename = $this->name;
@@ -238,7 +240,7 @@ class SiteSettings {
 		$this->setAppearanceSettings();
 		$this->setPermissions();
 
-		Hooks::run( 'SiteSettingsLoadSettingsEnd', array( $this ) );
+		$hookContainer->run( 'SiteSettingsLoadSettingsEnd', array( $this ) );
 
 		return true;
 	}
@@ -249,7 +251,7 @@ class SiteSettings {
 		} else {
 			$text = 'private';
 		}
-		Hooks::run( 'SiteSettingsGetPrivacyLevel', array( $this, &$text ) );
+		MediaWikiServices::getInstance()->getHookContainer()->run( 'SiteSettingsGetPrivacyLevel', array( $this, &$text ) );
 		return $text;
 	}
 
@@ -325,7 +327,7 @@ END;
 		}
 
 		$errorMessage = null;
-		Hooks::run( 'SiteSettingsSaveTabSettings', array( $tabName, &$valuesToUpdate, &$errorMessage ) );
+		MediaWikiServices::getInstance()->getHookContainer()->run( 'SiteSettingsSaveTabSettings', array( $tabName, &$valuesToUpdate, &$errorMessage ) );
 		if ( !is_null( $errorMessage ) ) {
 			return $errorMessage;
 		}

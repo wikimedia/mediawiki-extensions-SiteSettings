@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 /**
  * Various utility functions for the Site Settings extension.
  *
@@ -16,7 +18,8 @@ class SSUtils {
 			return;
 		}
 
-		Hooks::run( 'SiteSettingsInitializeSiteBegin' );
+		$hookContainer = MediaWikiServices::getInstance()->getHookContainer();
+		$hookContainer->run( 'SiteSettingsInitializeSiteBegin' );
 
 		$siteSettings = SiteSettings::newFromDatabase();
 		if ( ! is_null( $siteSettings ) ) {
@@ -25,7 +28,7 @@ class SSUtils {
 			$siteSettings = new SiteSettings();
 		}
 
-		Hooks::run( 'SiteSettingsInitializeSiteEnd' );
+		$hookContainer = MediaWikiServices::getInstance()->getHookContainer()->run( 'SiteSettingsInitializeSiteEnd' );
 	}
 
 	static function setUser( $user, $s ) {
@@ -39,21 +42,21 @@ class SSUtils {
 	public static function getDBForReading() {
 		global $wgSiteSettingsDB;
 		$db = wfGetDB( DB_REPLICA, [], $wgSiteSettingsDB );
-		Hooks::run( 'SiteSettingsGetDB', array( &$db ) );
+		MediaWikiServices::getInstance()->getHookContainer()->run( 'SiteSettingsGetDB', array( &$db ) );
 		return $db;
 	}
 
 	public static function getDBForWriting() {
 		global $wgSiteSettingsDB;
 		$db = wfGetDB( DB_MASTER, [], $wgSiteSettingsDB );
-		Hooks::run( 'SiteSettingsGetDB', array( &$db ) );
+		MediaWikiServices::getInstance()->getHookContainer()->run( 'SiteSettingsGetDB', array( &$db ) );
 		return $db;
 	}
 
 	public static function saveSiteValuesToDB( $valuesToUpdate ) {
 		$db = self::getDBForWriting();
 		$conds = array();
-		Hooks::run( 'SiteSettingsDBConditions', array( &$conds ) );
+		MediaWikiServices::getInstance()->getHookContainer()->run( 'SiteSettingsDBConditions', array( &$conds ) );
 		$db->update( 'site_settings', $valuesToUpdate, $conds );
 	}
 
@@ -119,7 +122,8 @@ class SSUtils {
 
 	public static function describeDBSchema( $updater ) {
 		$continueWithUpdate = true;
-		Hooks::run( 'SiteSettingsCreateTableBefore', array( &$continueWithUpdate ) );
+		$hookContainer = MediaWikiServices::getInstance()->getHookContainer();
+		$hookContainer->run( 'SiteSettingsCreateTableBefore', array( &$continueWithUpdate ) );
 		if ( !$continueWithUpdate ) {
 			return true;
 		}
@@ -127,7 +131,7 @@ class SSUtils {
 		$dir = dirname( __FILE__ );
 		//$updater->addExtensionUpdate( array( 'addTable', 'site_settings', "$dir/SiteSettings.sql", true ) );
 		$updater->addExtensionTable( 'site_settings', "$dir/sql/SiteSettings.sql", true );
-		Hooks::run( 'SiteSettingsCreateTableBefore', array( $updater ) );
+		$hookContainer->run( 'SiteSettingsCreateTableBefore', array( $updater ) );
 		return true;
 	}
 

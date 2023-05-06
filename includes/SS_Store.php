@@ -9,6 +9,8 @@
  * files uploaded for this wiki.
  */
 
+use MediaWiki\MediaWikiServices;
+
 class SSStore {
 
 	private static $fieldValues = array();
@@ -25,7 +27,7 @@ class SSStore {
 	}
 
 	static function loadValue( $fieldName ) {
-		Hooks::run( 'SiteSettingsStoreLoadValue', array( $fieldName, &$value ) );
+		MediaWikiServices::getInstance()->getHookContainer()->run( 'SiteSettingsStoreLoadValue', array( $fieldName, &$value ) );
 		self::$fieldValues[$fieldName] = $value;
 	}
 }

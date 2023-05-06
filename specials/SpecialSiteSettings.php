@@ -38,20 +38,21 @@ class SpecialSiteSettings extends SpecialPage {
 
 	function optionsHTML( $group_name, $options_array, $cur_value ) {
 		$text = "";
+		$hookContainer = $this->getHookContainer();
 		foreach ( $options_array as $option ) {
 			$attrs = array();
 			if ( $option->getID() == $cur_value ) {
 				$attrs['checked'] = true;
 			}
 			$optionText = $option->getName() . ' - '. $option->getDescription();
-			Hooks::run( 'SiteSettingsPrivacyOptionDisplay',
+			$hookContainer->run( 'SiteSettingsPrivacyOptionDisplay',
 				array( $group_name, $option, &$attrs, &$optionText ) );
 			$radioHTML = Html::input( $group_name, $option->getID(), 'radio', $attrs );
 			$text .= "\t" . Html::rawElement( 'label', null, $radioHTML . ' ' . $optionText );
 			$text .= "<br />\n";
 		}
 
-		Hooks::run( 'SiteSettingsPrivacyOptionsDisplay',
+		$hookContainer->run( 'SiteSettingsPrivacyOptionsDisplay',
 			array( $group_name, &$text ) );
 
 		return $text;
@@ -144,7 +145,7 @@ END;
 
 END;
 
-		Hooks::run( 'SiteSettingsMainTab', array( $siteSettings, &$text ) );
+		$this->getHookContainer()->run( 'SiteSettingsMainTab', array( $siteSettings, &$text ) );
 		$update_label = wfMessage( 'sitesettings-update' )->text();
 		$text .=<<<END
 	<p><input type="Submit" name="update" value="$update_label" id="prefsubmit"></p>
@@ -181,7 +182,7 @@ END;
 		$text .= "\t" . Html::element( 'h2', null, wfMessage( 'sitesettings-editingpolicy' )->text() ) . "\n";
 		$text .= $this->optionsHTML( "editing_policy_id", $editing_policies, $siteSettings->editing_policy_id );
 
-		Hooks::run( 'SiteSettingsPrivacyTab', array( $siteSettings, &$text ) );
+		$this->getHookContainer()->run( 'SiteSettingsPrivacyTab', array( $siteSettings, &$text ) );
 
 		$update_label = wfMessage( 'sitesettings-update' )->text();
 		$text .=<<<END
@@ -230,7 +231,7 @@ END;
 			) . "<br />\n";
 		}
 		$text .= "</p>\n";
-		Hooks::run( 'SiteSettingsSkinTab', array( $siteSettings, &$text ) );
+		$this->getHookContainer()->run( 'SiteSettingsSkinTab', array( $siteSettings, &$text ) );
 
 		$update_label = wfMessage( 'sitesettings-update' )->text();
 		$text .=<<<END
@@ -279,7 +280,7 @@ END;
 	<p><input type="Submit" name="upload_favicon" value="$upload_label"></p>
 
 END;
-		Hooks::run( 'SiteSettingsFaviconInput', array( $siteSettings, &$text ) );
+		MediaWikiServices::getInstance()->getHookContainer()->run( 'SiteSettingsFaviconInput', array( $siteSettings, &$text ) );
 		return $text;
 	}
 
@@ -483,7 +484,7 @@ END;
 		} else {
 			// Let other extensions handle information saves
 			$siteSettings = SiteSettings::newFromDatabase();
-			Hooks::run( 'SiteSettingsUpdate', array( &$siteSettings, &$text ) );
+			$this->getHookContainer()->run( 'SiteSettingsUpdate', array( &$siteSettings, &$text ) );
 		}
 
 		$allTabInfo = array(
@@ -544,7 +545,7 @@ END;
 		foreach ( $allTabInfo as $i => $tabInfo ) {
 			$text .= $this->printTab( $tabInfo );
 		}
-		Hooks::run( 'SiteSettingsTabs', array( &$text, $siteSettings ) );
+		$this->getHookContainer()->run( 'SiteSettingsTabs', array( &$text, $siteSettings ) );
 		$text .=<<<END
 	</div>
 	</form>
