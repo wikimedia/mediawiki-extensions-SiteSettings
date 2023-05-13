@@ -60,21 +60,23 @@ class SSUtils {
 		$db->update( 'site_settings', $valuesToUpdate, $conds );
 	}
 
-	static function addTopSiteSettingsLink( &$personal_urls, &$title, $skinTemplate ) {
+	static function addTopSiteSettingsLink( $sktemplate, &$links ) {
 		$site_settings_vals = null;
+		$title = $sktemplate->getTitle();
 		$cur_url = $title->getLocalURL();
-		$user = $skinTemplate->getUser();
+		$user = $sktemplate->getUser();
 
 		if ( $user->isAllowed( 'sitesettings' ) ) {
 			$ss = SpecialPage::getTitleFor( 'SiteSettings' );
 			$href = $ss->getLocalURL();
 			$site_settings_vals = array(
-				'text' => wfMessage( 'sitesettings' )->text(),
+				'text' => $sktemplate->msg( 'sitesettings' )->text(),
 				'href' => $href,
 				'active' => ( $href == $cur_url )
 			);
 		}
 		if ( $site_settings_vals != null ) {
+			$personal_urls = &$links['user-menu'];
 			// Find the location of the "Preferences" link,
 			// and add the "Site settings" link right before it.
 			// This is a "key-safe" splice - it preserves both the

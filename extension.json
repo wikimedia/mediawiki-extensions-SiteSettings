@@ -50,7 +50,7 @@
 	},
 	"Hooks": {
 		"LoadExtensionSchemaUpdates": "SSUtils::describeDBSchema",
-		"PersonalUrls": "SSUtils::addTopSiteSettingsLink",
+		"SkinTemplateNavigation::Universal": "SSUtils::addTopSiteSettingsLink",
 		"UserGetRights": "SSUtils::blockFromReading"
 	},
 	"config": {
