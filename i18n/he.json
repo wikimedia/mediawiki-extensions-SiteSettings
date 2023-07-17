@@ -3,7 +3,8 @@
 		"authors": [
 			"Amire80",
 			"Macofe",
-			"Ronel1"
+			"Ronel1",
+			"Neriah"
 		]
 	},
 	"sitesettings-desc": "הוספת אפשרות לשנות את הגדרות האתר דרך ממשק ויקי",
@@ -43,7 +44,7 @@
 	"sitesettings-veryclosededitingdesc": "רק מפעילים יכולים לערוך",
 	"sitesettings-updated": "הגדרות באתר עודכנו.",
 	"sitesettings-appearanceupdated": "הגדרות מראה האתר עודכנו.",
-	"sitesettings-userskinsreset": "העיצוב לכל המשתמשים הנוכחיים של הוויקי הזה שוּנה ל־\"$1\".",
+	"sitesettings-userskinsreset": "העיצוב לכל המשתמשים הנוכחיים של הוויקי הזה שונה ל־\"$1\".",
 	"sitesettings-sitelogo": "סמל",
 	"sitesettings-nologo": "אין סמל נוכחי.",
 	"sitesettings-uploadlogo": "העלאת סמל:",
