@@ -28,7 +28,7 @@ class SSUtils {
 			$siteSettings = new SiteSettings();
 		}
 
-		$hookContainer = MediaWikiServices::getInstance()->getHookContainer()->run( 'SiteSettingsInitializeSiteEnd' );
+		$hookContainer->run( 'SiteSettingsInitializeSiteEnd' );
 	}
 
 	static function setUser( $user, $s ) {
