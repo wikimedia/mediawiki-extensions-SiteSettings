@@ -6,6 +6,7 @@
  * @author Yaron Koren
  */
 
+use MediaWiki\Languages\LanguageNameUtils;
 use MediaWiki\MediaWikiServices;
 use Wikimedia\Rdbms\IDatabase;
 
@@ -73,13 +74,8 @@ END;
 		global $wgLanguageCode;
 
 		// Code based on dropdown menu from SpecialPreferences.php.
-		if ( method_exists( MediaWikiServices::class, 'getLanguageNameUtils' ) ) {
-			// MW 1.34+
-			$languages = MediaWikiServices::getInstance()->getLanguageNameUtils()
-				->getLanguageNames( MediaWiki\Languages\LanguageNameUtils::AUTONYMS, MediaWiki\Languages\LanguageNameUtils::DEFINED );
-		} else {
-			$languages = Language::fetchLanguageNames( null, 'mw' );
-		}
+		$languages = MediaWikiServices::getInstance()->getLanguageNameUtils()
+			->getLanguageNames( LanguageNameUtils::AUTONYMS, LanguageNameUtils::DEFINED );
 		if ( !array_key_exists( $wgLanguageCode, $languages ) ) {
 			$languages[$siteSettings->language_code] = $siteSettings->language_code;
 		}
@@ -430,21 +426,11 @@ END;
 				IDatabase::ALL_ROWS,
 				__METHOD__
 			);
-			$services = MediaWikiServices::getInstance();
-			if ( method_exists( $services, 'getUserOptionsManager' ) ) {
-				// MW 1.35 +
-				$userOptionsManager = $services->getUserOptionsManager();
-				foreach ( $userIds as $userId ) {
-					$user = User::newFromId( $userId );
-					$userOptionsManager->setOption( $user, 'skin', $siteSettings->default_skin );
-					$userOptionsManager->saveOptions( $user );
-				}
-			} else {
-				foreach ( $userIds as $userId ) {
-					$user = User::newFromId( $userId );
-					$user->setOption( 'skin', $siteSettings->default_skin );
-					$user->saveSettings();
-				}
+			$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
+			foreach ( $userIds as $userId ) {
+				$user = User::newFromId( $userId );
+				$userOptionsManager->setOption( $user, 'skin', $siteSettings->default_skin );
+				$userOptionsManager->saveOptions( $user );
 			}
 			$text .= '<div class="successbox">' . wfMessage( 'sitesettings-userskinsreset', $siteSettings->default_skin )->text() . "</div>\n";
 		} elseif ( $request->getCheck( 'upload_logo' ) ) {

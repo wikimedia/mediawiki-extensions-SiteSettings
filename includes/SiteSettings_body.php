@@ -220,12 +220,7 @@ class SiteSettings {
 		$wgLocalInterwiki = $wgSitename;
 
 		$wgLanguageCode = $this->language_code;
-		if ( method_exists( MediaWikiServices::class, 'getLanguageFactory' ) ) {
-			// MW 1.35+
-			$wgContLang = MediaWikiServices::getInstance()->getLanguageFactory()->getLanguage( $wgLanguageCode );
-		} else {
-			$wgContLang = Language::factory( $wgLanguageCode );
-		}
+		$wgContLang = MediaWikiServices::getInstance()->getLanguageFactory()->getLanguage( $wgLanguageCode );
 
 		$wgLocalTZoffset = $this->hours_timezone_offset * 60;
 		$wgAmericanDates = $this->use_american_dates;
