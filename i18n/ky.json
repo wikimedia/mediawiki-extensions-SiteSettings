@@ -4,5 +4,8 @@
 			"Bosogo"
 		]
 	},
-	"sitesettings-editingpolicy": "Түзөтүү"
+	"sitesettings-registrationpolicy": "Катталуу",
+	"sitesettings-closedreg": "Жабык",
+	"sitesettings-editingpolicy": "Түзөтүү",
+	"sitesettings-closedediting": "Жабык"
 }
