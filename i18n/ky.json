@@ -5,5 +5,7 @@
 		]
 	},
 	"sitesettings-registrationpolicy": "Катталуу",
-	"sitesettings-editingpolicy": "Түзөтүү"
+	"sitesettings-closedreg": "Жабык",
+	"sitesettings-editingpolicy": "Түзөтүү",
+	"sitesettings-closedediting": "Жабык"
 }
