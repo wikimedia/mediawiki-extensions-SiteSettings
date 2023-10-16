@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Elisardojm",
-			"Macofe"
+			"Macofe",
+			"Toliño"
 		]
 	},
 	"sitesettings-desc": "Permite modificar a configuración mediante unha interface wiki",
@@ -58,5 +59,7 @@
 	"sitesettings-removefavicon": "Eliminar favicon",
 	"sitesettings-changefavicon": "Cambiar favicon:",
 	"sitesettings-faviconuploaded": "Subiuse o favicon.",
-	"sitesettings-faviconremoved": "Eliminouse o favicon."
+	"sitesettings-faviconremoved": "Eliminouse o favicon.",
+	"right-sitesettings": "Modificar a [[Special:SiteSettings|configuración do wiki]] no propio wiki",
+	"action-sitesettings": "modificar a [[Special:SiteSettings|configuración do wiki]] no propio wiki"
 }
