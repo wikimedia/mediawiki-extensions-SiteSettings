@@ -64,7 +64,5 @@
 	"sitesettings-removefavicon": "파비콘 지우기",
 	"sitesettings-changefavicon": "파비콘 변경:",
 	"sitesettings-faviconuploaded": "파비콘이 업로드되었습니다.",
-	"sitesettings-faviconremoved": "파비콘이 지워졌습니다.",
-	"right-sitesettings": "이 위키에서 [[Special:SiteSettings|위키 설정]]을 수정해",
-	"action-sitesettings": "이 위키에서 [[Special:SiteSettings|위키 설정]]을 수정해"
+	"sitesettings-faviconremoved": "파비콘이 지워졌습니다."
 }
