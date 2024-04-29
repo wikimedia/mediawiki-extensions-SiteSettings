@@ -7,7 +7,8 @@
 			"Macofe",
 			"Mywood",
 			"Tranve",
-			"Xiplus"
+			"Xiplus",
+			"沈澄心"
 		]
 	},
 	"sitesettings-desc": "允许通过wiki界面修改设置",
@@ -63,5 +64,7 @@
 	"sitesettings-removefavicon": "移除图标",
 	"sitesettings-changefavicon": "更改图标：",
 	"sitesettings-faviconuploaded": "图标已上传。",
-	"sitesettings-faviconremoved": "图标已移除。"
+	"sitesettings-faviconremoved": "图标已移除。",
+	"right-sitesettings": "在wiki本身修改[[Special:SiteSettings|wiki设置]]",
+	"action-sitesettings": "在wiki本身修改[[Special:SiteSettings|wiki设置]]"
 }
