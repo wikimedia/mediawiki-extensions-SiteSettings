@@ -48,7 +48,7 @@ class SSUtils {
 
 	public static function getDBForWriting() {
 		global $wgSiteSettingsDB;
-		$db = wfGetDB( DB_MASTER, [], $wgSiteSettingsDB );
+		$db = wfGetDB( DB_PRIMARY, [], $wgSiteSettingsDB );
 		MediaWikiServices::getInstance()->getHookContainer()->run( 'SiteSettingsGetDB', array( &$db ) );
 		return $db;
 	}
