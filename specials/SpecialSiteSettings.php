@@ -426,9 +426,10 @@ END;
 				IDatabase::ALL_ROWS,
 				__METHOD__
 			);
+			$userFactory = MediaWikiServices::getInstance()->getUserFactory();
 			$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
 			foreach ( $userIds as $userId ) {
-				$user = User::newFromId( $userId );
+				$user = $userFactory->newFromId( $userId );
 				$userOptionsManager->setOption( $user, 'skin', $siteSettings->default_skin );
 				$userOptionsManager->saveOptions( $user );
 			}
