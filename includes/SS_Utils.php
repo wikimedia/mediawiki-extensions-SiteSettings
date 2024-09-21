@@ -33,7 +33,7 @@ class SSUtils {
 
 	static function setUser( $user, $s ) {
 		if ( self::currentSiteIsMainSite() ) return true;
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		// Just overwrite whatever was there before.
 		$s = $dbr->selectRow( 'user', '*', array( 'user_id' => $user->mId ), __METHOD__ );
 		return true;
@@ -41,14 +41,14 @@ class SSUtils {
 
 	public static function getDBForReading() {
 		global $wgSiteSettingsDB;
-		$db = wfGetDB( DB_REPLICA, [], $wgSiteSettingsDB );
+		$db = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA, [], $wgSiteSettingsDB );
 		MediaWikiServices::getInstance()->getHookContainer()->run( 'SiteSettingsGetDB', array( &$db ) );
 		return $db;
 	}
 
 	public static function getDBForWriting() {
 		global $wgSiteSettingsDB;
-		$db = wfGetDB( DB_PRIMARY, [], $wgSiteSettingsDB );
+		$db = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY, [], $wgSiteSettingsDB );
 		MediaWikiServices::getInstance()->getHookContainer()->run( 'SiteSettingsGetDB', array( &$db ) );
 		return $db;
 	}
