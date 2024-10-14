@@ -4,5 +4,7 @@
 			"Cabal"
 		]
 	},
-	"sitesettings-maintab": "ਮੁੱਢਲਾ"
+	"sitesettings-maintab": "ਮੁੱਢਲਾ",
+	"sitesettings-logouploaded": "ਮਾਰਕਾ ਜੋੜਿਆ ਗਿਆ ਸੀ।",
+	"sitesettings-logoremoved": "ਮਾਰਕਾ ਹਟਾ ਦਿੱਤਾ ਗਿਆ ਸੀ।"
 }
