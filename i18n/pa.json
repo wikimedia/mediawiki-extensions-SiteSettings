@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Cabal"
+			"Cabal",
+			"Kuldeepburjbhalaike"
 		]
 	},
-	"sitesettings-maintab": "ਮੁੱਢਲਾ",
+	"sitesettings-maintab": "ਮੁੱਖ",
 	"sitesettings-logouploaded": "ਮਾਰਕਾ ਜੋੜਿਆ ਗਿਆ ਸੀ।",
 	"sitesettings-logoremoved": "ਮਾਰਕਾ ਹਟਾ ਦਿੱਤਾ ਗਿਆ ਸੀ।"
 }
