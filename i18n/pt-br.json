@@ -3,7 +3,8 @@
 		"authors": [
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
-			"Felipe L. Ewald"
+			"Felipe L. Ewald",
+			"TheEduGobi"
 		]
 	},
 	"sitesettings-desc": "Permite modificar as configurações através de uma interface wiki",
@@ -31,7 +32,7 @@
 	"sitesettings-veryprivatedesc": "Os usuários só podem ver a página principal e sua própria página de usuário",
 	"sitesettings-registrationpolicy": "Registro",
 	"sitesettings-openreg": "Aberto",
-	"sitesettings-openregdesc": "Todos se podem registar",
+	"sitesettings-openregdesc": "Todos podem se registrar",
 	"sitesettings-closedreg": "Fechado",
 	"sitesettings-closedregdesc": "Os utilizadores só podem ser registados por um administrador",
 	"sitesettings-editingpolicy": "Edição",
