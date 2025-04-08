@@ -364,16 +364,6 @@ END;
 				unset( $details['status'] );
 				$code = array_shift( $details['details'] );
 				return $this->msg( $code, $details['details'] )->parse();
-			case UploadBase::HOOK_ABORTED:
-				if ( is_array( $details['error'] ) ) { # allow hooks to return error details in an array
-					$args = $details['error'];
-					$error = array_shift( $args );
-				} else {
-					$error = $details['error'];
-					$args = null;
-				}
-
-				return $this->msg( $error, $args )->parse();
 			default:
 				return "Upload error: unknown value `{$details['status']}`";
 		}
