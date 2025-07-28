@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Ganesh Paudel",
-			"Krish Dulal"
+			"Krish Dulal",
+			"पर्वत सुबेदी"
 		]
 	},
 	"sitesettings-desc": "विकी इन्टरफेस द्वारा सेटिङ परिवर्तन गर्न दिन्छ",
@@ -12,7 +13,7 @@
 	"sitesettings-allowexternalimages": "बाह्य तस्वीर स्वीकार्ने",
 	"sitesettings-allowlowercasepagenames": "सानो अक्षरका पृष्ठ नाम स्वीकार्ने",
 	"sitesettings-copyrightdesc": "प्रतिलिपी विवरण:",
-	"sitesettings-update": "अद्यतन गर्ने(अपडेट)",
+	"sitesettings-update": "अद्यावधिक गर्ने",
 	"sitesettings-privacytab": "गोपनीयता",
 	"sitesettings-public": "सार्वजनिक",
 	"sitesettings-publicdesc": "यो साइट हरेकले पढ्न सक्छन्",
