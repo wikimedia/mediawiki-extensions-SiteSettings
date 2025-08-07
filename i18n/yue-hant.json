@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"JeffreyKim"
+			"JeffreyKim",
+			"Ktchankt"
 		]
 	},
 	"sitesettings-desc": "允許透過維基介面修改設定",
@@ -44,19 +45,19 @@
 	"sitesettings-userskinsreset": "呢個維基嘅所有現有用戶嘅皮膚已經改為\"$1\"。",
 	"sitesettings-sitelogo": "撈稿",
 	"sitesettings-nologo": "而家冇撈稿。",
-	"sitesettings-uploadlogo": "噏撈個撈稿:",
+	"sitesettings-uploadlogo": "上載個撈稿：",
 	"sitesettings-currentlogo": "而家嘅撈稿：",
 	"sitesettings-removelogo": "移除個撈稿",
 	"sitesettings-changelogo": "改個撈稿",
-	"sitesettings-logouploaded": "撈稿已經噏撈咗。",
+	"sitesettings-logouploaded": "撈稿已經上載咗。",
 	"sitesettings-logoremoved": "撈稿已經移除咗。",
-	"sitesettings-faviconheader": "Favicon快勞",
+	"sitesettings-faviconheader": "Favicon檔",
 	"sitesettings-nofavicon": "而家冇favicon。",
-	"sitesettings-uploadfavicon": "噏撈個favicon (應該叫做<code>favicon.ico</code>):",
+	"sitesettings-uploadfavicon": "上載個favicon (應該叫做<code>favicon.ico</code>):",
 	"sitesettings-currentfavicon": "而家嘅favicon：",
 	"sitesettings-removefavicon": "而家個favicon",
 	"sitesettings-changefavicon": "改個favicon：",
-	"sitesettings-faviconuploaded": "Favicon已經噏撈咗。",
+	"sitesettings-faviconuploaded": "Favicon已經上載咗。",
 	"sitesettings-faviconremoved": "Favicon已經移除咗。",
 	"right-sitesettings": "修改維基本身嘅[[Special:SiteSettings|維基嘅設定]]",
 	"action-sitesettings": "修改維基本身嘅[[Special:SiteSettings|維基嘅設定]]"
