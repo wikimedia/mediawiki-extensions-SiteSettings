@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"JeffreyKim",
-			"Ktchankt"
+			"Ktchankt",
+			"Yueman"
 		]
 	},
 	"sitesettings-desc": "允許透過維基介面修改設定",
@@ -42,7 +43,7 @@
 	"sitesettings-veryclosededitingdesc": "淨係得管理員先至可以編輯",
 	"sitesettings-updated": "網站設定已經更新咗。",
 	"sitesettings-appearanceupdated": "網站外觀設定已經更新咗。",
-	"sitesettings-userskinsreset": "呢個維基嘅所有現有用戶嘅皮膚已經改為\"$1\"。",
+	"sitesettings-userskinsreset": "呢個維基嘅所有現有用戶嘅外觀已經改做「$1」。",
 	"sitesettings-sitelogo": "撈稿",
 	"sitesettings-nologo": "而家冇撈稿。",
 	"sitesettings-uploadlogo": "上載個撈稿：",
