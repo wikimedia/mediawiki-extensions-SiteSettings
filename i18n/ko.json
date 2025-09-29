@@ -8,12 +8,13 @@
 			"Revi",
 			"Ykhwong",
 			"아라",
-			"Dr1t jg"
+			"Dr1t jg",
+			"Suleiman the Magnificent Television"
 		]
 	},
 	"sitesettings-desc": "위키 인터페이스를 통해 설정을 수정할 수 있게 합니다",
 	"sitesettings": "사이트 설정",
-	"sitesettings-maintab": "대문",
+	"sitesettings-maintab": "일반",
 	"sitesettings-sitename": "사이트 이름:",
 	"sitesettings-sitenamespace": "사이트 별 이름공간 이름:",
 	"sitesettings-timezone": "GMT로부터의 시간차:",
