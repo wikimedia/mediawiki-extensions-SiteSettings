@@ -6,8 +6,10 @@
  * @author Yaron Koren
  */
 
+use MediaWiki\Html\Html;
 use MediaWiki\Languages\LanguageNameUtils;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 use Wikimedia\Rdbms\IDatabase;
 
 class SpecialSiteSettings extends SpecialPage {
