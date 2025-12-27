@@ -87,11 +87,11 @@ END;
 			$selected = ( $code == $selectedLang );
 			$options .= Xml::option( "$code - $name", $code, $selected ) . "\n";
 		}
-		$american_dates_checkbox = Xml::check( 'use_american_dates', $siteSettings->use_american_dates );
-		$show_page_counters_checkbox = Xml::check( 'show_page_counters', $siteSettings->show_page_counters );
-		$use_subpages_checkbox = Xml::check( 'use_subpages', $siteSettings->use_subpages );
-		$allow_external_images_checkbox = Xml::check( 'allow_external_images', $siteSettings->allow_external_images );
-		$allow_lowercase_page_names_checkbox = Xml::check( 'allow_lowercase_page_names', $siteSettings->allow_lowercase_page_names );
+		$american_dates_checkbox = Html::check( 'use_american_dates', $siteSettings->use_american_dates );
+		$show_page_counters_checkbox = Html::check( 'show_page_counters', $siteSettings->show_page_counters );
+		$use_subpages_checkbox = Html::check( 'use_subpages', $siteSettings->use_subpages );
+		$allow_external_images_checkbox = Html::check( 'allow_external_images', $siteSettings->allow_external_images );
+		$allow_lowercase_page_names_checkbox = Html::check( 'allow_lowercase_page_names', $siteSettings->allow_lowercase_page_names );
 
 		$name_label = wfMessage( 'sitesettings-sitename' )->text();
 		$language_label = wfMessage( 'yourlanguage')->text();
