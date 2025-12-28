@@ -51,7 +51,7 @@ class SpecialSiteSettings extends SpecialPage {
 			$hookContainer->run( 'SiteSettingsPrivacyOptionDisplay',
 				array( $group_name, $option, &$attrs, &$optionText ) );
 			$radioHTML = Html::input( $group_name, $option->getID(), 'radio', $attrs );
-			$text .= "\t" . Html::rawElement( 'label', null, $radioHTML . ' ' . $optionText );
+			$text .= "\t" . Html::rawElement( 'label', [], $radioHTML . ' ' . $optionText );
 			$text .= "<br />\n";
 		}
 
@@ -86,8 +86,7 @@ END;
 		$selectedLang = isset( $languages[$siteSettings->language_code] ) ? $siteSettings->language_code : $wgLanguageCode;
 		$options = "\n";
 		foreach( $languages as $code => $name ) {
-			$selected = ( $code == $selectedLang );
-			$options .= Xml::option( "$code - $name", $code, $selected ) . "\n";
+			$options .= Html::element( 'option', [ 'value' => $code, 'selected' => ( $code == $selectedLang ) ], "$code - $name" ) . "\n";
 		}
 		$american_dates_checkbox = Html::check( 'use_american_dates', $siteSettings->use_american_dates );
 		$show_page_counters_checkbox = Html::check( 'show_page_counters', $siteSettings->show_page_counters );
@@ -160,7 +159,7 @@ END;
 			SSFieldLevel::create( 2, wfMessage( 'sitesettings-private' )->text(), wfMessage( 'sitesettings-privatedesc' )->text() ),
 			SSFieldLevel::create( 3, wfMessage( 'sitesettings-veryprivate' )->text(), wfMessage( 'sitesettings-veryprivatedesc' )->text() )
 		);
-		$text = "\t" . Html::element( 'h2', null, wfMessage( 'sitesettings-viewingpolicy' )->text() ) . "\n";
+		$text = "\t" . Html::element( 'h2', [], wfMessage( 'sitesettings-viewingpolicy' )->text() ) . "\n";
 		$text .= $this->optionsHTML( "viewing_policy_id", $viewing_policies, $siteSettings->viewing_policy_id );
 
 		// Registration policy
@@ -168,7 +167,7 @@ END;
 			SSFieldLevel::create( 1, wfMessage( 'sitesettings-openreg' )->text(), wfMessage( 'sitesettings-openregdesc' )->text() ),
 			SSFieldLevel::create( 2, wfMessage( 'sitesettings-closedreg' )->text(), wfMessage( 'sitesettings-closedregdesc' )->text() ),
 		);
-		$text .= "\t" . Html::element( 'h2', null, wfMessage( 'sitesettings-registrationpolicy' )->text() ) . "\n";
+		$text .= "\t" . Html::element( 'h2', [], wfMessage( 'sitesettings-registrationpolicy' )->text() ) . "\n";
 		$text .= $this->optionsHTML( "registration_policy_id", $registration_policies, $siteSettings->registration_policy_id );
 
 		// Editing policy
@@ -177,7 +176,7 @@ END;
 			SSFieldLevel::create( 3, wfMessage( 'sitesettings-closedediting')->text(), wfMessage( 'sitesettings-closededitingdesc' )->text() ),
 			SSFieldLevel::create( 4, wfMessage( 'sitesettings-veryclosedediting')->text(), wfMessage( 'sitesettings-veryclosededitingdesc' )->text() ),
 		);
-		$text .= "\t" . Html::element( 'h2', null, wfMessage( 'sitesettings-editingpolicy' )->text() ) . "\n";
+		$text .= "\t" . Html::element( 'h2', [], wfMessage( 'sitesettings-editingpolicy' )->text() ) . "\n";
 		$text .= $this->optionsHTML( "editing_policy_id", $editing_policies, $siteSettings->editing_policy_id );
 
 		$this->getHookContainer()->run( 'SiteSettingsPrivacyTab', array( $siteSettings, &$text ) );
@@ -248,7 +247,7 @@ END;
 	}
 
 	static function printFaviconSection( $siteSettings, $favicon_error_msg ) {
-		$text = Html::element( 'h2', null, wfMessage( 'sitesettings-faviconheader' )->text() ) . "\n";
+		$text = Html::element( 'h2', [], wfMessage( 'sitesettings-faviconheader' )->text() ) . "\n";
 		$current_favicon = $siteSettings->favicon_file;
 		if ( $current_favicon ) {
 			global $wgFavicon;
@@ -283,7 +282,7 @@ END;
 	}
 
 	function logoTabBody( $siteSettings, $logo_error_msg, $favicon_error_msg ) {
-		$text = "\t" . Html::element( 'h2', null, wfMessage( 'sitesettings-sitelogo' )->text() ) . "\n";
+		$text = "\t" . Html::element( 'h2', [], wfMessage( 'sitesettings-sitelogo' )->text() ) . "\n";
 
 		$current_logo = $siteSettings->logo_file;
 		if ( $current_logo ) {
