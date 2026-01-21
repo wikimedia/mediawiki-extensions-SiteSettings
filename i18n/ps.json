@@ -1,8 +1,26 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
 	},
-	"sitesettings-sitename": "د وېبځي نوم:"
+	"sitesettings-desc": "د ويکي مخبڼې له لارې د اوڼنو بدلولو ته اجازه ورکوي",
+	"sitesettings": "وېبځي اوڼنې",
+	"sitesettings-maintab": "آرنی",
+	"sitesettings-sitename": "د وېبځي نوم:",
+	"sitesettings-sitenamespace": "د وېبځي ځانگړی نوم‌تشيال نوم:",
+	"sitesettings-update": "هم‌مهالول",
+	"sitesettings-privacytab": "پټنتيا",
+	"sitesettings-viewingpolicy": "کتل",
+	"sitesettings-public": "ټولگړی",
+	"sitesettings-publicdesc": "هرڅوک وېبځی لوستلی شي",
+	"sitesettings-private": "ځانواله",
+	"sitesettings-privatedesc": "يوازې نوم‌ليکلي کارنان وېبځی لوستلی شي",
+	"sitesettings-veryprivate": "ډېر ځانواله",
+	"sitesettings-veryprivatedesc": "کارنان يوازې د دوی کارن مخ او ار مخ کتلی شي",
+	"sitesettings-registrationpolicy": "نومليکنه",
+	"sitesettings-openreg": "پرانېستل",
+	"sitesettings-openregdesc": "هرڅوک نوم‌ليکنه کولی شي",
+	"sitesettings-closedreg": "تړل شوی"
 }
