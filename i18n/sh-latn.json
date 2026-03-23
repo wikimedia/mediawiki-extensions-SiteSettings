@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Aca",
 			"Winston Sung"
 		]
 	},
@@ -22,7 +23,7 @@
 	"sitesettings-openreg": "Otvorena",
 	"sitesettings-openregdesc": "Svatko može se registrirati",
 	"sitesettings-closedreg": "Zatvorena",
-	"sitesettings-closedregdesc": "Korisnike može da staje samo administrator",
+	"sitesettings-closedregdesc": "Korisnike može dodavati samo administrator",
 	"sitesettings-editingpolicy": "Uređivanje",
 	"sitesettings-openediting": "Otvoreno",
 	"sitesettings-openeditingdesc": "Svatko može uređivati",
@@ -37,7 +38,7 @@
 	"sitesettings-uploadlogo": "Postavi logo:",
 	"sitesettings-currentlogo": "Trenutno logo:",
 	"sitesettings-removelogo": "Ukloni logo",
-	"sitesettings-changelogo": "Smijeni logo:",
+	"sitesettings-changelogo": "Promijeni logo:",
 	"sitesettings-logouploaded": "Logo je postavljen.",
 	"sitesettings-logoremoved": "Logo je uklonjen.",
 	"sitesettings-faviconheader": "Datoteka ikonkate",
