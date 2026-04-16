@@ -6,7 +6,8 @@
 			"McDutchie",
 			"Romaine",
 			"SPQRobin",
-			"Vistaus"
+			"Vistaus",
+			"Siebrand"
 		]
 	},
 	"sitesettings-desc": "Maakt het mogelijk instellingen te wijzigen via een wiki-interface",
@@ -17,7 +18,7 @@
 	"sitesettings-timezone": "Urenverschil t.o.v. GMT:",
 	"sitesettings-current-gmt": "(huidige GMT is $1 of $2)",
 	"sitesettings-americandates": "Data opmaken in Amerikaanse stijl",
-	"sitesettings-showpageviews": "Toon het aantal paginaweergaven onderaan elke pagina",
+	"sitesettings-showpageviews": "Het aantal paginaweergaven onderaan elke pagina weergeven",
 	"sitesettings-usesubpages": "<a href=\"https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Subpages\">Subpagina's</a> gebruiken",
 	"sitesettings-allowexternalimages": "Externe afbeeldingen toestaan",
 	"sitesettings-allowlowercasepagenames": "Paginanamen in kleine letters toestaan",
