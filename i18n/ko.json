@@ -21,7 +21,7 @@
 	"sitesettings-timezone": "GMT로부터의 시간차:",
 	"sitesettings-current-gmt": "(현재 GMT는 $1 혹은 $2입니다)",
 	"sitesettings-americandates": "미국식 날짜 사용",
-	"sitesettings-showpageviews": "각 문서 아래에 조회 수 보여주기",
+	"sitesettings-showpageviews": "각 문서 아래에 조회수 보여주기",
 	"sitesettings-usesubpages": "<a href=\"https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Subpages\"> 하위 문서 </a> 사용",
 	"sitesettings-allowexternalimages": "외부 그림 허용",
 	"sitesettings-allowlowercasepagenames": "소문자 문서 이름 허용",
@@ -68,5 +68,5 @@
 	"sitesettings-faviconuploaded": "파비콘이 업로드되었습니다.",
 	"sitesettings-faviconremoved": "파비콘이 지워졌습니다.",
 	"right-sitesettings": "위키 자체에서 [[Special:SiteSettings|위키 설정]]을 수정",
-	"action-sitesettings": "위키 자체에서 [[Special:SiteSettings|위키 설정]]을 수정할"
+	"action-sitesettings": "위키 자체에서 [[Special:SiteSettings|위키 설정]]을 수정"
 }
